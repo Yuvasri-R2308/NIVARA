@@ -30,6 +30,22 @@ NIVARA Pipeline Architecture:
 ```
 
 ---
+## 📸 Project Preview
+
+### Dashboard
+![NIVARA Dashboard](Screenshot%202026-08-25%20174942.png)
+
+### Risk Assessment
+![NIVARA Risk Assessment](Screenshot%202026-08-25%20174951.png)
+
+### Hazard Analysis
+![NIVARA Hazard Analysis](Screenshot%202026-08-25%20175003.png)
+
+### Relocation Recommendation
+![NIVARA Relocation](Screenshot%202026-08-25%20175025.png)
+
+### Interactive Map
+![NIVARA Map](Screenshot%202026-08-25%20175036.png)
 
 ## 🔬 The 7 Core Decision Engines & Formulations
 
