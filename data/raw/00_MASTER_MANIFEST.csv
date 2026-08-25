@@ -1,0 +1,21 @@
+No,Dataset,File_or_manifest,Role,Status
+01,DEM / Elevation,01_DEM_Slope.csv,Current,Available
+02,Slope,02_DEM_Slope_Summary.csv,Current,Available
+03,Rainfall observations,03_IMD_2024_Rainfall_Observations.csv,Current,Available
+04,Rainfall summary,04_IMD_2024_Rainfall_Summary.csv,Current,Available
+05,Four-area rainfall,05_Four_Areas_Rainfall.csv,Current,Available with station/regional caveat
+06,Cadastral prototype,06_Cadastral_Prototype.csv,Current,Synthetic prototype only
+07,Cadastral geometry,07_Cadastral_Prototype.geojson,Current,Synthetic prototype only
+08,Flood hazard,08_Flood_Hazard_KSDMA_FULL.csv,Current,Official source/statistics; raster extraction pending
+09,Population,10_Population_CORRECTED_Census2011.csv,Corrected,Census values corrected
+10,Official boundaries,11_Official_Boundary_Targets.csv,Target,Polygons still need GIS download/verification
+11,Landslide,12_Landslide_GSI2022_Source_and_Targets.csv,Target,Official GSI/KSDMA source confirmed; per-area extraction pending
+12,Road/accessibility,13_Additional_Datasets_Required.csv,Required/recommended,Needs collection
+13,Buildings/settlements,13_Additional_Datasets_Required.csv,Recommended,Needs collection
+14,Water/drainage,13_Additional_Datasets_Required.csv,Recommended,Needs collection
+15,LULC,13_Additional_Datasets_Required.csv,Recommended,Needs collection
+16,Soil/geology/geomorphology,13_Additional_Datasets_Required.csv,Recommended,Needs collection
+17,Critical facilities,13_Additional_Datasets_Required.csv,Recommended,Needs collection
+18,2024 hazard event inventory,13_Additional_Datasets_Required.csv,Recommended,Needs collection
+19,Final risk/suitability,13_Additional_Datasets_Required.csv,Derived,To calculate
+20,Relocation ranking,13_Additional_Datasets_Required.csv,Derived,To calculate

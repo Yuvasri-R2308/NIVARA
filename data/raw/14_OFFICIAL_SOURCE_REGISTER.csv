@@ -1,0 +1,8 @@
+dataset,source_name,url,authority_type,notes
+Flood hazard,KSDMA Hazard Maps,https://sdma.kerala.gov.in/hazard-maps/,Official,Historic and RCP8.5 10/25/50/100/200/500-year raster layers
+Landslide susceptibility,KSDMA Hazard Maps / GSI 2022,https://sdma.kerala.gov.in/hazard-maps/,Official,GSI 2022 Wayanad susceptibility shapefile; Low/Moderate/High
+Wayanad GSI map,KSDMA Wayanad Landslide Susceptibility Map,https://sdma.kerala.gov.in/wp-content/uploads/2025/06/Landslide_Susceptibility_Zones_Districts_FINAL.pdf,Official,"Wayanad map; boundaries shown, disclaimer says external boundaries not verified"
+Population,Census of India 2011 PCA TV Wayanad,https://censusindia.gov.in/nada/index.php/catalog/6781,Official,Village-level population and identifiers
+Kerala spatial GIS,KSREC related links,https://ksrec.kerala.gov.in/website/HomeController/relatedlinks,Official,Links to Kerala Spatial Database and Wayanad GIS
+Land resources,Kerala Land Use Board LRIS 2.0,https://lris.kslub.kerala.gov.in/app/,Official,"Land use, drains, geology, geomorphology, roads, waterbodies, etc."
+Town planning GIS,Kerala Town & Country Planning MIS,https://gis.townplanning.kerala.gov.in/tcp/,Official,"Outer/inner boundaries, survey/block boundary, landuse, roads, junctions; portal disclaimer applies"

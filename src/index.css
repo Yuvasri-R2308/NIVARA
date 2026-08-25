@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0B120F;
+    color: #EAF1EC;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Fraunces', 'Georgia', serif;
+    letter-spacing: -0.02em;
+    color: #EAF1EC;
+  }
+
+  code, pre {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+/* Custom Deep Pine Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B120F;
+}
+::-webkit-scrollbar-thumb {
+  background: #25352E;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #364e43;
+}
+
+/* Leaflet Customizations for Dark Mode */
+.leaflet-container {
+  background: #0B120F !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #17241F !important;
+  color: #EAF1EC !important;
+  border: 1px solid #25352E !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6) !important;
+}
+
+.leaflet-popup-tip {
+  background: #17241F !important;
+  border: 1px solid #25352E !important;
+}
+
+.leaflet-control-zoom a {
+  background-color: #121C18 !important;
+  color: #EAF1EC !important;
+  border-color: #25352E !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #1c2c24 !important;
+  color: #4ADE9A !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(11, 18, 15, 0.85) !important;
+  color: #8FA79B !important;
+  font-size: 10px !important;
+}
+
+.leaflet-control-attribution a {
+  color: #4ADE9A !important;
+}

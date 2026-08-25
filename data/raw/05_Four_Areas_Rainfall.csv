@@ -1,0 +1,5 @@
+area,rainfall_source,rainfall_assignment,event_24h_rainfall_mm,event_15_to_29_july_rainfall_mm,event_normal_15_to_29_july_mm,event_departure_percent,nearest_reported_wayanad_station,station_29_july_mm,station_30_july_mm,station_31_july_mm,source
+Meppadi,IMD Wayanad regional/station data,Regional proxy; not an independent village gauge,142.0,544.0,440.2,24.0,Vyttiri,27.6,280.0,57.0,"IMD Monsoon Report 2024, Chapter 7 / Table 7.1"
+Achooranam,IMD Wayanad regional/station data,Regional proxy; not an independent village gauge,142.0,544.0,440.2,24.0,Vyttiri,27.6,280.0,57.0,"IMD Monsoon Report 2024, Chapter 7 / Table 7.1"
+Kuppadithara,IMD Wayanad regional/station data,Regional proxy; not an independent village gauge,142.0,544.0,440.2,24.0,Vyttiri,27.6,280.0,57.0,"IMD Monsoon Report 2024, Chapter 7 / Table 7.1"
+Kottathara,IMD Wayanad regional/station data,Regional proxy; not an independent village gauge,142.0,544.0,440.2,24.0,Vyttiri,27.6,280.0,57.0,"IMD Monsoon Report 2024, Chapter 7 / Table 7.1"

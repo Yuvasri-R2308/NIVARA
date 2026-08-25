@@ -1,0 +1,4 @@
+date,area,station,rainfall_mm,source_scope,rainfall_24h_mm,rainfall_48h_mm,rainfall_7day_mm,source
+2024-07-29,Wayanad,Vyttiri,27.6,Wayanad station observation,27.6,,,"India Meteorological Department (IMD), Monsoon Report 2024, Table 7.1"
+2024-07-30,Wayanad,Vyttiri,280.0,Wayanad station observation,280.0,307.6,,"India Meteorological Department (IMD), Monsoon Report 2024, Table 7.1"
+2024-07-31,Wayanad,Vyttiri,57.0,Wayanad station observation,57.0,337.0,,"India Meteorological Department (IMD), Monsoon Report 2024, Table 7.1"

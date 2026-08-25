@@ -1,0 +1,6 @@
+area,dataset,hazard,classes,format,source,status
+Wayanad,GSI 2022,Landslide susceptibility,Low / Moderate / High,Shapefile,KSDMA + GSI,Official source confirmed; download and spatially intersect with four boundaries
+Meppadi,GSI 2022,Landslide susceptibility,,,KSDMA + GSI,Per-area value pending GIS overlay
+Achooranam,GSI 2022,Landslide susceptibility,,,KSDMA + GSI,Per-area value pending GIS overlay
+Kuppadithara,GSI 2022,Landslide susceptibility,,,KSDMA + GSI,Per-area value pending GIS overlay
+Kottathara,GSI 2022,Landslide susceptibility,,,KSDMA + GSI,Per-area value pending GIS overlay

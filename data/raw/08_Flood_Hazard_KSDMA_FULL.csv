@@ -1,0 +1,13 @@
+district,scenario,return_period_years,area_affected_sq_km,hospitals_exposed,schools_exposed,source,source_type
+Wayanad,Historic,10,84.76,0,4,KSDMA/KSREC/UNEP/UN GRID/CIMA,Official published flood-probability report
+Wayanad,Historic,25,86.31,0,4,KSDMA/KSREC/UNEP/UN GRID/CIMA,Official published flood-probability report
+Wayanad,Historic,50,90.93,0,5,KSDMA/KSREC/UNEP/UN GRID/CIMA,Official published flood-probability report
+Wayanad,Historic,100,93.04,0,5,KSDMA/KSREC/UNEP/UN GRID/CIMA,Official published flood-probability report
+Wayanad,Historic,200,94.85,0,6,KSDMA/KSREC/UNEP/UN GRID/CIMA,Official published flood-probability report
+Wayanad,Historic,500,97.03,0,6,KSDMA/KSREC/UNEP/UN GRID/CIMA,Official published flood-probability report
+Wayanad,RCP8.5 Climate Change Scenario,10,124.92,0,9,KSDMA/KSREC/UNEP/UN GRID/CIMA,Official published flood-probability report
+Wayanad,RCP8.5 Climate Change Scenario,25,137.72,0,11,KSDMA/KSREC/UNEP/UN GRID/CIMA,Official published flood-probability report
+Wayanad,RCP8.5 Climate Change Scenario,50,146.17,0,12,KSDMA/KSREC/UNEP/UN GRID/CIMA,Official published flood-probability report
+Wayanad,RCP8.5 Climate Change Scenario,100,153.4,0,12,KSDMA/KSREC/UNEP/UN GRID/CIMA,Official published flood-probability report
+Wayanad,RCP8.5 Climate Change Scenario,200,161.11,0,13,KSDMA/KSREC/UNEP/UN GRID/CIMA,Official published flood-probability report
+Wayanad,RCP8.5 Climate Change Scenario,500,169.52,0,14,KSDMA/KSREC/UNEP/UN GRID/CIMA,Official published flood-probability report

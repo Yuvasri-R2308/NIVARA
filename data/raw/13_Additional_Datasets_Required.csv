@@ -1,0 +1,10 @@
+No,Dataset,What_to_collect,Purpose,Preferred_source,Status
+13,Road network / accessibility,"Roads, road class, junctions, travel distance",Emergency relocation accessibility,Kerala Town & Country Planning GIS / LRIS; OSM fallback,Needs GIS download/processing
+14,Buildings / settlement footprints,Building/settlement exposure and capacity,Estimate exposed buildings and candidate-site demand,Official GIS if available; OSM fallback,Recommended; needs collection
+15,Water bodies / drainage,"Rivers, streams, drains, waterbodies",Flood screening and site exclusion,Kerala LRIS / KSREC,Recommended; needs collection
+16,Land use / land cover,"Built-up, agriculture, forest, plantation, water, etc.",Land suitability screening,Kerala LRIS / KSREC / official LULC,Recommended; needs collection
+17,Soil / geology / geomorphology,"Soil depth, geology, geomorphology, erosion",Improve landslide/site suitability model,Kerala LRIS,Recommended for advanced model
+18,Critical facilities,"Schools, hospitals, shelters, fire stations",Emergency service access and capacity,KSDMA/KSEOC + official departments,Recommended
+19,Hazard event inventory,2024 landslide/event locations,Historical validation of landslide model,KSDMA/GSI/official event reports,Recommended
+20,Final parcel risk/suitability,Derived GIS layer,Combine hazard + exposure + suitability,Derived from 1–19,To calculate
+21,Relocation candidate ranking,Derived table,Rank safe alternative locations,Derived from 1–20,To calculate
