@@ -1,9 +1,5 @@
 # 🌲 NIVARA — Automated Multi-Hazard Risk & Resilient Relocation Intelligence Platform
 
-> **Smart India Hackathon (SIH26191) | Kerala State Disaster Management Authority (KSDMA) Decision-Support System**  
-> *Target Region: Wayanad District, Western Ghats, Kerala (Meppadi, Achooranam, Kottathara, Kuppadithara)*
-
----
 
 ## 🏛️ Project Architecture Overview
 
