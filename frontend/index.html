@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/nivara_logo.png" />
+    <link rel="apple-touch-icon" href="/assets/nivara_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIVARA — Multi-Hazard Risk & Smart Relocation Platform</title>
+    <!-- Google Fonts: Fraunces (Serif display), Space Grotesk (Sans UI), IBM Plex Mono (Data & Numbers) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script>
+      try {
+        localStorage.removeItem('nivara-theme');
+        document.documentElement.classList.remove('light', 'theme-light');
+        document.documentElement.removeAttribute('data-theme');
+      } catch (e) {}
+    </script>
+  </head>
+  <body class="bg-pine-bg text-pine-text antialiased selection:bg-pine-accent selection:text-pine-bg overflow-x-hidden w-full min-h-screen">
+    <div id="root" class="w-full min-h-screen"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

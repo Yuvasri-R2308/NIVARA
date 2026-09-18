@@ -1,0 +1,201 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.037,
+              19.373
+            ],
+            [
+              85.053,
+              19.373
+            ],
+            [
+              85.053,
+              19.383
+            ],
+            [
+              85.037,
+              19.383
+            ],
+            [
+              85.037,
+              19.373
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "transect_id": "POD-T01",
+        "name": "Old Podampeta Abandoned Village Scarp",
+        "hazard": "coastal_erosion",
+        "study_location": "Podampeta, Ganjam, Odisha",
+        "geomorphic_type": "Barrier Spit / Sandy Dune",
+        "baseline_retreat_m_yr": -2.4,
+        "cumulative_retreat_m": -82.0,
+        "settlement_status": "Ghost Village (Completely Submerged / Abandoned)",
+        "prototype_risk_score": 51.1,
+        "risk_level": "MODERATE",
+        "significant_wave_height_m": 1.14,
+        "peak_wave_period_s": 14.2,
+        "surge_m": 0.05,
+        "status": "LIVE",
+        "observation_time": "2026-09-16T08:00",
+        "rainfall_used_mm": 0.0,
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official INCOIS, NCCR, or OSDMA hazard declaration."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.045,
+              19.38
+            ],
+            [
+              85.061,
+              19.38
+            ],
+            [
+              85.061,
+              19.39
+            ],
+            [
+              85.045,
+              19.39
+            ],
+            [
+              85.045,
+              19.38
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "transect_id": "POD-T02",
+        "name": "Rushikulya Olive Ridley Nesting Beach",
+        "hazard": "coastal_erosion",
+        "study_location": "Podampeta, Ganjam, Odisha",
+        "geomorphic_type": "Estuarine Sand Spit",
+        "baseline_retreat_m_yr": -1.8,
+        "cumulative_retreat_m": -61.2,
+        "settlement_status": "Ecological Reserve / Mass Nesting Rookery",
+        "prototype_risk_score": 46.3,
+        "risk_level": "MODERATE",
+        "significant_wave_height_m": 1.14,
+        "peak_wave_period_s": 14.2,
+        "surge_m": 0.05,
+        "status": "LIVE",
+        "observation_time": "2026-09-16T08:00",
+        "rainfall_used_mm": 0.0,
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official INCOIS, NCCR, or OSDMA hazard declaration."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.03,
+              19.366
+            ],
+            [
+              85.046,
+              19.366
+            ],
+            [
+              85.046,
+              19.376
+            ],
+            [
+              85.03,
+              19.376
+            ],
+            [
+              85.03,
+              19.366
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "transect_id": "POD-T03",
+        "name": "New Podampeta Resettlement Colony",
+        "hazard": "coastal_erosion",
+        "study_location": "Podampeta, Ganjam, Odisha",
+        "geomorphic_type": "Inland Armored Embankment",
+        "baseline_retreat_m_yr": -0.9,
+        "cumulative_retreat_m": -30.6,
+        "settlement_status": "Rehabilitation Colony (500m Inland)",
+        "prototype_risk_score": 29.9,
+        "risk_level": "LOW",
+        "significant_wave_height_m": 1.14,
+        "peak_wave_period_s": 14.2,
+        "surge_m": 0.05,
+        "status": "LIVE",
+        "observation_time": "2026-09-16T08:00",
+        "rainfall_used_mm": 0.0,
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official INCOIS, NCCR, or OSDMA hazard declaration."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              85.021,
+              19.357
+            ],
+            [
+              85.037,
+              19.357
+            ],
+            [
+              85.037,
+              19.367
+            ],
+            [
+              85.021,
+              19.367
+            ],
+            [
+              85.021,
+              19.357
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "transect_id": "POD-T04",
+        "name": "Gokharkuda Fishery Landing Beach",
+        "hazard": "coastal_erosion",
+        "study_location": "Podampeta, Ganjam, Odisha",
+        "geomorphic_type": "Unprotected Sandy Coastline",
+        "baseline_retreat_m_yr": -2.1,
+        "cumulative_retreat_m": -71.4,
+        "settlement_status": "Active Coastal Fishing Village",
+        "prototype_risk_score": 47.9,
+        "risk_level": "MODERATE",
+        "significant_wave_height_m": 1.14,
+        "peak_wave_period_s": 14.2,
+        "surge_m": 0.05,
+        "status": "LIVE",
+        "observation_time": "2026-09-16T08:00",
+        "rainfall_used_mm": 0.0,
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official INCOIS, NCCR, or OSDMA hazard declaration."
+      }
+    }
+  ]
+}

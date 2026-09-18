@@ -1,0 +1,71 @@
+{
+  "hazard": "flood",
+  "name": "NIVARA Flood Inundation & River Stage Monitoring Module",
+  "version": "1.0.0",
+  "study_area": {
+    "location_name": "Dibrugarh & Upper Brahmaputra Basin, Assam",
+    "district": "Dibrugarh",
+    "basin": "Brahmaputra River Basin",
+    "state": "Assam",
+    "coordinates": {
+      "latitude": 27.4728,
+      "longitude": 94.9120,
+      "elevation_meters": 108
+    },
+    "aoi_bounding_box": {
+      "min_latitude": 27.3500,
+      "max_latitude": 27.6000,
+      "min_longitude": 94.8000,
+      "max_longitude": 95.1000
+    },
+    "critical_sectors": [
+      { "id": "DIB-01", "name": "Rohmaria Embankment Spur 7", "coordinates": [27.5250, 94.9820], "vulnerability_type": "Embankment Toe Scour & Breach Vulnerability" },
+      { "id": "DIB-02", "name": "Maijan Beel Overflow Basin", "coordinates": [27.4910, 94.9350], "vulnerability_type": "Backwater Inundation Depression" },
+      { "id": "DIB-03", "name": "Dibrugarh Town Protection Drain (DTP Dyke)", "coordinates": [27.4810, 94.9080], "vulnerability_type": "Urban Storm Sluice Backflow" },
+      { "id": "DIB-04", "name": "Chabua Low-Lying Terrace Margin", "coordinates": [27.4620, 95.0210], "vulnerability_type": "Agricultural Floodplain Inundation" }
+    ]
+  },
+  "cwc_gauge_station": {
+    "station_name": "Dibrugarh (Brahmaputra)",
+    "station_code": "025-LMD",
+    "river": "Brahmaputra",
+    "sub_basin": "Upper Brahmaputra",
+    "state": "Assam",
+    "thresholds_m_msl": {
+      "warning_level": 104.24,
+      "danger_level": 105.70,
+      "highest_flood_level_hfl": 106.48,
+      "hfl_date": "1998-09-03"
+    },
+    "categories": {
+      "normal": "< 104.24 m MSL",
+      "above_normal": "104.24 to 105.70 m MSL (Warning Exceeded)",
+      "severe": "105.70 to 106.48 m MSL (Danger Exceeded)",
+      "extreme": ">= 106.48 m MSL (HFL Exceeded)"
+    }
+  },
+  "data_sources": {
+    "cwc_ffs": {
+      "name": "Central Water Commission (CWC) — Flood Forecasting System",
+      "station_portal": "https://ffs.india-water.gov.in/",
+      "advisory_portal": "https://aff.india-water.gov.in/",
+      "india_wris_portal": "https://indiawris.gov.in/",
+      "nwic_portal": "https://nwic.gov.in/",
+      "notes": "C-FLOOD 2D inundation hydrodynamic mapping currently covers Mahanadi, Godavari, and Tapi basins only (Brahmaputra/Dibrugarh is not in C-FLOOD scope). River stage is ingested via CWC station gauge feed / India-WRIS telemetry."
+    },
+    "basin_rainfall": {
+      "name": "IMD Mausam National Weather Forecasting & Open-Meteo Catchment Inflow",
+      "portal_url": "https://mausam.imd.gov.in/",
+      "update_interval_minutes": 60
+    }
+  },
+  "risk_weights": {
+    "gauge_water_level_ratio": 0.65,
+    "upstream_basin_rainfall_24h": 0.25,
+    "discharge_velocity_trend": 0.10
+  },
+  "outputs": {
+    "current_snapshot": "outputs/flood_current.json",
+    "geojson": "outputs/flood_inundation.geojson"
+  }
+}

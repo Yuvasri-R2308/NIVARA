@@ -1,0 +1,68 @@
+{
+  "module_id": "cloudburst-04",
+  "hazard_type": "cloudburst",
+  "name": "Kedarnath Cloudburst & Convective Updraft Intelligence",
+  "study_area": {
+    "name": "Kedarnath, Mandakini Valley, Rudraprayag District, Uttarakhand",
+    "state": "Uttarakhand",
+    "district": "Rudraprayag",
+    "valley": "Mandakini River Valley",
+    "elevation_m": 3583,
+    "coordinates": {
+      "latitude": 30.7346,
+      "longitude": 79.0669
+    },
+    "aoi_bounding_box": [78.9000, 30.6000, 79.2000, 30.8500],
+    "critical_hotspots": [
+      {
+        "id": "KED-01",
+        "name": "Kedarnath Temple Outwash Plain",
+        "coordinates": [30.7346, 79.0669],
+        "elevation_m": 3583,
+        "vulnerability_type": "Glacial Outwash Fan & Moraine Dammed Lake Path"
+      },
+      {
+        "id": "KED-02",
+        "name": "Mandakini Valley Fluvial Channel",
+        "coordinates": [30.6800, 79.0500],
+        "elevation_m": 2450,
+        "vulnerability_type": "Steep River Gorge Flash Flood Defile"
+      },
+      {
+        "id": "KED-03",
+        "name": "Gaurikund Base Camp & Pilgrim Hub",
+        "coordinates": [30.6520, 79.0280],
+        "elevation_m": 1980,
+        "vulnerability_type": "High Population Density Thermal Spring Base"
+      },
+      {
+        "id": "KED-04",
+        "name": "Sonprayag River Confluence",
+        "coordinates": [30.6300, 79.0050],
+        "elevation_m": 1820,
+        "vulnerability_type": "Mandakini-Vasuki Ganga Confluence Choke Point"
+      }
+    ]
+  },
+  "sources": {
+    "nasa_power_api": "https://power.larc.nasa.gov/api/temporal/daily/point",
+    "imd_radar_source": "IMD DWR Mukteshwar / Mussoorie Radar Echoes",
+    "open_meteo_live": "https://api.open-meteo.com/v1/forecast"
+  },
+  "thresholds": {
+    "rainfall_24h_mm": {
+      "heavy": 64.5,
+      "very_heavy": 115.5,
+      "cloudburst": 100.0
+    },
+    "rh2m_saturation_pct": 85.0,
+    "convective_cloudburst_prob_critical": 0.70
+  },
+  "risk_weights": {
+    "rh2m_atmospheric_saturation": 0.35,
+    "antecedent_precipitation_3d": 0.35,
+    "wind_shear_updraft": 0.15,
+    "thermal_lapse_t2m": 0.15
+  },
+  "update_interval_minutes": 60
+}

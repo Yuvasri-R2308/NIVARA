@@ -1,0 +1,111 @@
+{
+  "hazard": "coastal_erosion",
+  "module_name": "Podampeta Coastal Erosion & Wave Action Monitoring",
+  "study_area": {
+    "location_name": "Podampeta Coastal Sector, Ganjam District, Odisha",
+    "state": "Odisha",
+    "district": "Ganjam",
+    "coastal_stretch": "Rushikulya Estuary to Gopalpur Coast",
+    "coordinates": [
+      19.378,
+      85.045
+    ],
+    "aoi_bounding_box": [
+      84.95,
+      19.28,
+      85.15,
+      19.48
+    ]
+  },
+  "status": "LIVE",
+  "observation_time": "2026-09-16T08:00",
+  "download_time": "2026-09-16T08:57:12.293020+00:00",
+  "provenance": {
+    "marine_source": "INCOIS Ocean State Forecast Model & Marine MetOcean Network",
+    "buoy_station": "Gopalpur Buoy / Podampeta Coastline",
+    "satellite_baseline_source": "National Centre for Coastal Research (NCCR) Shoreline Change Atlas & Landsat/Sentinel CoastSat DSAS Transects",
+    "baseline_period": "1990 - 2024 (34-year decadal analysis)",
+    "rainfall_dependency": "STRICTLY NONE (0.0% Weight - Marine wave energy & shoreline geomorphology exclusively)"
+  },
+  "observed_data": {
+    "significant_wave_height_m": 1.14,
+    "peak_wave_period_s": 14.2,
+    "wave_direction_deg": 171.0,
+    "swell_wave_height_m": 1.12,
+    "swell_wave_period_s": 12.1,
+    "estimated_surge_m": 0.05,
+    "sea_state_description": "Slight / Calm Sea",
+    "satellite_mean_retreat_rate_m_yr": -2.25
+  },
+  "prototype_risk_score": {
+    "score": 47.9,
+    "classification": "MODERATE",
+    "label": "Coastal Erosion Prototype Risk Score",
+    "weights_used": {
+      "wave_energy_height": 0.45,
+      "surge_and_tidal_stage": 0.2,
+      "satellite_shoreline_retreat_rate": 0.35,
+      "rainfall": 0.0
+    },
+    "rainfall_weight": 0.0,
+    "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 explicitly NOT an official INCOIS, NCCR, or OSDMA hazard declaration.",
+    "critical_transects": [
+      {
+        "transect_id": "POD-T01",
+        "name": "Old Podampeta Abandoned Village Scarp",
+        "geomorphic_type": "Barrier Spit / Sandy Dune",
+        "baseline_retreat_rate_m_yr": -2.4,
+        "cumulative_loss_m": -82.0,
+        "settlement_status": "Ghost Village (Completely Submerged / Abandoned)",
+        "prototype_risk_score": 51.1,
+        "status": "MODERATE",
+        "coordinates": [
+          19.378,
+          85.045
+        ]
+      },
+      {
+        "transect_id": "POD-T02",
+        "name": "Rushikulya Olive Ridley Nesting Beach",
+        "geomorphic_type": "Estuarine Sand Spit",
+        "baseline_retreat_rate_m_yr": -1.8,
+        "cumulative_loss_m": -61.2,
+        "settlement_status": "Ecological Reserve / Mass Nesting Rookery",
+        "prototype_risk_score": 46.3,
+        "status": "MODERATE",
+        "coordinates": [
+          19.385,
+          85.053
+        ]
+      },
+      {
+        "transect_id": "POD-T03",
+        "name": "New Podampeta Resettlement Colony",
+        "geomorphic_type": "Inland Armored Embankment",
+        "baseline_retreat_rate_m_yr": -0.9,
+        "cumulative_loss_m": -30.6,
+        "settlement_status": "Rehabilitation Colony (500m Inland)",
+        "prototype_risk_score": 29.9,
+        "status": "LOW",
+        "coordinates": [
+          19.371,
+          85.038
+        ]
+      },
+      {
+        "transect_id": "POD-T04",
+        "name": "Gokharkuda Fishery Landing Beach",
+        "geomorphic_type": "Unprotected Sandy Coastline",
+        "baseline_retreat_rate_m_yr": -2.1,
+        "cumulative_loss_m": -71.4,
+        "settlement_status": "Active Coastal Fishing Village",
+        "prototype_risk_score": 47.9,
+        "status": "MODERATE",
+        "coordinates": [
+          19.362,
+          85.029
+        ]
+      }
+    ]
+  }
+}

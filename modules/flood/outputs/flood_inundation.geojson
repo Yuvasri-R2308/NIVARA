@@ -1,0 +1,189 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              94.972,
+              27.517
+            ],
+            [
+              94.992,
+              27.517
+            ],
+            [
+              94.992,
+              27.533
+            ],
+            [
+              94.972,
+              27.533
+            ],
+            [
+              94.972,
+              27.517
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sector_id": "DIB-01",
+        "name": "Rohmaria Embankment Spur 7",
+        "hazard": "flood",
+        "study_location": "Dibrugarh, Assam",
+        "vulnerability_type": "Embankment Toe Scour & Breach Vulnerability",
+        "prototype_risk_score": 39.1,
+        "risk_level": "NORMAL",
+        "water_level_m_msl": 104.2,
+        "warning_level_m_msl": 104.24,
+        "danger_level_m_msl": 105.7,
+        "cwc_category": "Normal River Stage",
+        "status": "LIVE",
+        "observation_time": "2026-09-16T08:00",
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official Central Water Commission (CWC) flood declaration."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              94.925,
+              27.483
+            ],
+            [
+              94.945,
+              27.483
+            ],
+            [
+              94.945,
+              27.499
+            ],
+            [
+              94.925,
+              27.499
+            ],
+            [
+              94.925,
+              27.483
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sector_id": "DIB-02",
+        "name": "Maijan Beel Overflow Basin",
+        "hazard": "flood",
+        "study_location": "Dibrugarh, Assam",
+        "vulnerability_type": "Backwater Inundation Depression",
+        "prototype_risk_score": 45.1,
+        "risk_level": "NORMAL",
+        "water_level_m_msl": 104.2,
+        "warning_level_m_msl": 104.24,
+        "danger_level_m_msl": 105.7,
+        "cwc_category": "Normal River Stage",
+        "status": "LIVE",
+        "observation_time": "2026-09-16T08:00",
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official Central Water Commission (CWC) flood declaration."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              94.898,
+              27.473
+            ],
+            [
+              94.918,
+              27.473
+            ],
+            [
+              94.918,
+              27.489
+            ],
+            [
+              94.898,
+              27.489
+            ],
+            [
+              94.898,
+              27.473
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sector_id": "DIB-03",
+        "name": "Dibrugarh Town Protection Drain (DTP Dyke)",
+        "hazard": "flood",
+        "study_location": "Dibrugarh, Assam",
+        "vulnerability_type": "Urban Storm Sluice Backflow",
+        "prototype_risk_score": 42.1,
+        "risk_level": "NORMAL",
+        "water_level_m_msl": 104.2,
+        "warning_level_m_msl": 104.24,
+        "danger_level_m_msl": 105.7,
+        "cwc_category": "Normal River Stage",
+        "status": "LIVE",
+        "observation_time": "2026-09-16T08:00",
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official Central Water Commission (CWC) flood declaration."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              95.011,
+              27.454
+            ],
+            [
+              95.031,
+              27.454
+            ],
+            [
+              95.031,
+              27.47
+            ],
+            [
+              95.011,
+              27.47
+            ],
+            [
+              95.011,
+              27.454
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sector_id": "DIB-04",
+        "name": "Chabua Low-Lying Terrace Margin",
+        "hazard": "flood",
+        "study_location": "Dibrugarh, Assam",
+        "vulnerability_type": "Agricultural Floodplain Inundation",
+        "prototype_risk_score": 36.1,
+        "risk_level": "NORMAL",
+        "water_level_m_msl": 104.2,
+        "warning_level_m_msl": 104.24,
+        "danger_level_m_msl": 105.7,
+        "cwc_category": "Normal River Stage",
+        "status": "LIVE",
+        "observation_time": "2026-09-16T08:00",
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official Central Water Commission (CWC) flood declaration."
+      }
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.0569,
+              30.7266
+            ],
+            [
+              79.0769,
+              30.7266
+            ],
+            [
+              79.0769,
+              30.7426
+            ],
+            [
+              79.0569,
+              30.7426
+            ],
+            [
+              79.0569,
+              30.7266
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "hotspot_id": "KED-01",
+        "name": "Kedarnath Temple Outwash Plain",
+        "hazard": "cloudburst",
+        "study_location": "Kedarnath, Mandakini Valley, Uttarakhand",
+        "elevation_m": 3583,
+        "vulnerability_type": "Glacial Outwash Fan & Moraine Dammed Lake Path",
+        "prototype_risk_score": 40.8,
+        "risk_level": "MODERATE",
+        "rainfall_24h_mm": 3.7,
+        "relative_humidity_pct": 70.0,
+        "status": "LIVE",
+        "observation_time": "2026-09-16T09:00",
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official IMD or USDMA disaster warning."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.04,
+              30.672
+            ],
+            [
+              79.06,
+              30.672
+            ],
+            [
+              79.06,
+              30.688
+            ],
+            [
+              79.04,
+              30.688
+            ],
+            [
+              79.04,
+              30.672
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "hotspot_id": "KED-02",
+        "name": "Mandakini Valley Fluvial Channel",
+        "hazard": "cloudburst",
+        "study_location": "Kedarnath, Mandakini Valley, Uttarakhand",
+        "elevation_m": 2450,
+        "vulnerability_type": "Steep River Gorge Flash Flood Defile",
+        "prototype_risk_score": 34.8,
+        "risk_level": "LOW",
+        "rainfall_24h_mm": 3.7,
+        "relative_humidity_pct": 70.0,
+        "status": "LIVE",
+        "observation_time": "2026-09-16T09:00",
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official IMD or USDMA disaster warning."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.018,
+              30.644
+            ],
+            [
+              79.038,
+              30.644
+            ],
+            [
+              79.038,
+              30.66
+            ],
+            [
+              79.018,
+              30.66
+            ],
+            [
+              79.018,
+              30.644
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "hotspot_id": "KED-03",
+        "name": "Gaurikund Base Camp & Pilgrim Hub",
+        "hazard": "cloudburst",
+        "study_location": "Kedarnath, Mandakini Valley, Uttarakhand",
+        "elevation_m": 1980,
+        "vulnerability_type": "High Population Density Thermal Spring Base",
+        "prototype_risk_score": 32.3,
+        "risk_level": "LOW",
+        "rainfall_24h_mm": 3.7,
+        "relative_humidity_pct": 70.0,
+        "status": "LIVE",
+        "observation_time": "2026-09-16T09:00",
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official IMD or USDMA disaster warning."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.995,
+              30.622
+            ],
+            [
+              79.015,
+              30.622
+            ],
+            [
+              79.015,
+              30.638
+            ],
+            [
+              78.995,
+              30.638
+            ],
+            [
+              78.995,
+              30.622
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "hotspot_id": "KED-04",
+        "name": "Sonprayag River Confluence",
+        "hazard": "cloudburst",
+        "study_location": "Kedarnath, Mandakini Valley, Uttarakhand",
+        "elevation_m": 1820,
+        "vulnerability_type": "Mandakini-Vasuki Ganga Confluence Choke Point",
+        "prototype_risk_score": 31.4,
+        "risk_level": "LOW",
+        "rainfall_24h_mm": 3.7,
+        "relative_humidity_pct": 70.0,
+        "status": "LIVE",
+        "observation_time": "2026-09-16T09:00",
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official IMD or USDMA disaster warning."
+      }
+    }
+  ]
+}

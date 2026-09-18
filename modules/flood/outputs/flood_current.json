@@ -1,0 +1,95 @@
+{
+  "hazard": "flood",
+  "module_name": "Dibrugarh Flood Inundation & River Stage Monitoring",
+  "study_area": {
+    "location_name": "Dibrugarh & Brahmaputra Basin, Assam",
+    "river": "Brahmaputra",
+    "coordinates": [
+      27.4728,
+      94.912
+    ],
+    "aoi_bounding_box": {
+      "min_latitude": 27.35,
+      "max_latitude": 27.6,
+      "min_longitude": 94.8,
+      "max_longitude": 95.1
+    }
+  },
+  "status": "LIVE",
+  "observation_time": "2026-09-16T08:00",
+  "download_time": "2026-09-16T08:53:00.122534+00:00",
+  "provenance": {
+    "primary_gauge_source": "Central Water Commission (CWC) Flood Forecasting Network",
+    "station_code": "025-LMD",
+    "station_name": "Dibrugarh",
+    "rainfall_source": "IMD Regional Met Centre & Open-Meteo Catchment Inflow",
+    "access_method": "NWIC / CWC Station Gauge API + Open-Meteo Hydrology REST"
+  },
+  "observed_data": {
+    "current_water_level_m_msl": 104.2,
+    "warning_level_m_msl": 104.24,
+    "danger_level_m_msl": 105.7,
+    "highest_flood_level_hfl_m_msl": 106.48,
+    "freeboard_to_danger_m": 1.5,
+    "cwc_official_category": "Normal River Stage",
+    "gauge_trend": "STEADY",
+    "upstream_basin_rainfall_24h_mm": 11.3
+  },
+  "prototype_risk_score": {
+    "score": 41.1,
+    "classification": "NORMAL",
+    "label": "Flood Prototype Risk Score",
+    "weights_used": {
+      "gauge_water_level_ratio": 0.65,
+      "upstream_basin_rainfall_24h": 0.25,
+      "discharge_velocity_trend": 0.1
+    },
+    "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 explicitly NOT an official CWC or ASDMA warning.",
+    "critical_sectors": [
+      {
+        "sector_id": "DIB-01",
+        "name": "Rohmaria Embankment Spur 7",
+        "vulnerability_type": "Embankment Toe Scour & Breach Vulnerability",
+        "prototype_risk_score": 39.1,
+        "status": "NORMAL",
+        "coordinates": [
+          27.525,
+          94.982
+        ]
+      },
+      {
+        "sector_id": "DIB-02",
+        "name": "Maijan Beel Overflow Basin",
+        "vulnerability_type": "Backwater Inundation Depression",
+        "prototype_risk_score": 45.1,
+        "status": "NORMAL",
+        "coordinates": [
+          27.491,
+          94.935
+        ]
+      },
+      {
+        "sector_id": "DIB-03",
+        "name": "Dibrugarh Town Protection Drain (DTP Dyke)",
+        "vulnerability_type": "Urban Storm Sluice Backflow",
+        "prototype_risk_score": 42.1,
+        "status": "NORMAL",
+        "coordinates": [
+          27.481,
+          94.908
+        ]
+      },
+      {
+        "sector_id": "DIB-04",
+        "name": "Chabua Low-Lying Terrace Margin",
+        "vulnerability_type": "Agricultural Floodplain Inundation",
+        "prototype_risk_score": 36.1,
+        "status": "NORMAL",
+        "coordinates": [
+          27.462,
+          95.021
+        ]
+      }
+    ]
+  }
+}

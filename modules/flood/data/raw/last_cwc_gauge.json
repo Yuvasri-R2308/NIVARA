@@ -1,0 +1,22 @@
+{
+  "source": "Central Water Commission (CWC) FFS & IMD Station Network",
+  "station_name": "Dibrugarh",
+  "station_code": "025-LMD",
+  "river": "Brahmaputra",
+  "basin": "Brahmaputra",
+  "coordinates": [
+    27.4728,
+    94.912
+  ],
+  "observation_time": "2026-09-16T08:00",
+  "download_time": "2026-09-16T08:52:58.664666+00:00",
+  "status": "LIVE",
+  "water_level_m_msl": 104.2,
+  "warning_level_m_msl": 104.24,
+  "danger_level_m_msl": 105.7,
+  "highest_flood_level_hfl": 106.48,
+  "freeboard_to_danger_m": 1.5,
+  "cwc_official_category": "Normal River Stage",
+  "gauge_trend": "STEADY",
+  "upstream_basin_rainfall_24h_mm": 11.3
+}

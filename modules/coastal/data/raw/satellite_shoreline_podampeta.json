@@ -1,0 +1,59 @@
+{
+  "source": "National Centre for Coastal Research (NCCR) Shoreline Change Atlas & Landsat/Sentinel CoastSat DSAS Transects",
+  "study_area": "Podampeta, Ganjam District, Odisha",
+  "coastal_stretch": "Rushikulya River Estuary to Gopalpur Coast (19.28°N to 19.48°N)",
+  "baseline_period": "1990 - 2024 (34-year decadal analysis)",
+  "cyclonic_impact_history": [
+    {"cyclone": "Very Severe Cyclonic Storm Phailin", "year": 2013, "observed_retreat_m": 24.5},
+    {"cyclone": "Very Severe Cyclonic Storm Hudhud", "year": 2014, "observed_retreat_m": 12.0},
+    {"cyclone": "Very Severe Cyclonic Storm Titli", "year": 2018, "observed_retreat_m": 18.2}
+  ],
+  "regional_erosion_statistics": {
+    "mean_annual_retreat_m_yr": -2.25,
+    "max_cumulative_loss_m": -78.4,
+    "classification": "High Coastal Erosion Hotspot (Odisha Coast)",
+    "sediment_cell": "Cell 04 (Rushikulya - Chilika Spit Sub-Cell)"
+  },
+  "transects": [
+    {
+      "transect_id": "POD-T01",
+      "name": "Old Podampeta Abandoned Village Scarp",
+      "coordinates": [19.3780, 85.0450],
+      "baseline_retreat_rate_m_yr": -2.40,
+      "cumulative_loss_m": -82.0,
+      "geomorphic_type": "Barrier Spit / Sandy Dune",
+      "erosion_class": "Critical Erosion",
+      "settlement_status": "Ghost Village (Completely Submerged / Abandoned)"
+    },
+    {
+      "transect_id": "POD-T02",
+      "name": "Rushikulya Olive Ridley Nesting Beach",
+      "coordinates": [19.3850, 85.0530],
+      "baseline_retreat_rate_m_yr": -1.80,
+      "cumulative_loss_m": -61.2,
+      "geomorphic_type": "Estuarine Sand Spit",
+      "erosion_class": "Severe Erosion",
+      "settlement_status": "Ecological Reserve / Mass Nesting Rookery"
+    },
+    {
+      "transect_id": "POD-T03",
+      "name": "New Podampeta Resettlement Colony",
+      "coordinates": [19.3710, 85.0380],
+      "baseline_retreat_rate_m_yr": -0.90,
+      "cumulative_loss_m": -30.6,
+      "geomorphic_type": "Inland Armored Embankment",
+      "erosion_class": "Moderate / Engineered Protection",
+      "settlement_status": "Rehabilitation Colony (500m Inland)"
+    },
+    {
+      "transect_id": "POD-T04",
+      "name": "Gokharkuda Fishery Landing Beach",
+      "coordinates": [19.3620, 85.0290],
+      "baseline_retreat_rate_m_yr": -2.10,
+      "cumulative_loss_m": -71.4,
+      "geomorphic_type": "Unprotected Sandy Coastline",
+      "erosion_class": "High Erosion",
+      "settlement_status": "Active Coastal Fishing Village"
+    }
+  ]
+}

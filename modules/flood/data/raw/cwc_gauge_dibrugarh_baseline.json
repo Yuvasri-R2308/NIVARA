@@ -1,0 +1,39 @@
+{
+  "source": "Central Water Commission (CWC) — Brahmaputra & Barak Basin Organization",
+  "provenance": "CWC Flood Forecasting Station Portal (ffs.india-water.gov.in) & NWIC",
+  "station_code": "025-LMD",
+  "station_name": "Dibrugarh",
+  "river": "Brahmaputra",
+  "basin": "Brahmaputra",
+  "state": "Assam",
+  "district": "Dibrugarh",
+  "coordinates": [27.4728, 94.9120],
+  "zero_gauge_level_m_msl": 98.00,
+  "warning_level_m_msl": 104.24,
+  "danger_level_m_msl": 105.70,
+  "highest_flood_level_m_msl": 106.48,
+  "hfl_date": "1998-09-03",
+  "historical_inundation_scenarios": [
+    {
+      "scenario": "Return Period 10-Year (Normal Monsoon Surge)",
+      "water_level_m_msl": 104.50,
+      "cwc_category": "Above Normal",
+      "discharge_cumecs": 32500,
+      "inundated_area_sqkm": 28.5
+    },
+    {
+      "scenario": "Return Period 25-Year (Severe Flood Alert)",
+      "water_level_m_msl": 105.80,
+      "cwc_category": "Severe Flood",
+      "discharge_cumecs": 44800,
+      "inundated_area_sqkm": 64.2
+    },
+    {
+      "scenario": "Return Period 50-Year (Extreme Inundation Exceeding HFL)",
+      "water_level_m_msl": 106.65,
+      "cwc_category": "Extreme Flood",
+      "discharge_cumecs": 61200,
+      "inundated_area_sqkm": 112.0
+    }
+  ]
+}

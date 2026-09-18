@@ -1,0 +1,22 @@
+{
+  "source": "INCOIS Ocean State Forecast Model & Marine MetOcean Network",
+  "station": "Gopalpur Buoy / Podampeta Coastline",
+  "coordinates": [
+    19.378,
+    85.045
+  ],
+  "observation_time": "2026-09-16T08:00",
+  "download_time": "2026-09-16T08:57:09.516518+00:00",
+  "status": "LIVE",
+  "metocean_data": {
+    "significant_wave_height_m": 1.14,
+    "peak_wave_period_s": 14.2,
+    "wave_direction_deg": 171.0,
+    "swell_wave_height_m": 1.12,
+    "swell_wave_period_s": 12.1,
+    "estimated_surge_m": 0.05,
+    "sea_state_description": "Slight / Calm Sea"
+  },
+  "satellite_baseline_retreat_m_yr": -2.25,
+  "data_provenance": "Observed MetOcean Near-Real-Time Stream + NCCR Satellite Shoreline Baseline (Zero Rainfall Used)"
+}

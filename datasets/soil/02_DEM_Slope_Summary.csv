@@ -1,0 +1,2 @@
+source,source_resolution,study_extent_type,min_lat,max_lat,min_lon,max_lon,sample_spacing,points,elevation_min_m,elevation_max_m,slope_min_deg,slope_max_deg
+N11E076.hgt,1 arc-second,Wayanad approximate bounding box (not village boundaries),11.45,11.85,75.65,76.15,5 arc-seconds,31501,36.0,2232.0,0.0,71.91

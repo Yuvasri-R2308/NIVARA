@@ -1,0 +1,97 @@
+{
+  "hazard": "cloudburst",
+  "module_name": "Kedarnath Cloudburst & Convective Updraft Intelligence",
+  "study_area": {
+    "location_name": "Kedarnath, Mandakini Valley, Rudraprayag District, Uttarakhand",
+    "state": "Uttarakhand",
+    "district": "Rudraprayag",
+    "valley": "Mandakini River Valley",
+    "coordinates": [
+      30.7346,
+      79.0669
+    ],
+    "elevation_m": 3583,
+    "aoi_bounding_box": [
+      78.9,
+      30.6,
+      79.2,
+      30.85
+    ]
+  },
+  "status": "LIVE",
+  "observation_time": "2026-09-16T09:00",
+  "download_time": "2026-09-16T09:04:36.007621+00:00",
+  "provenance": {
+    "meteo_source": "IMD High-Altitude Himalayan AWS Network & Open-Meteo Alpine Feeds",
+    "historical_baseline_source": "NASA POWER 36-Year Daily Series & 167 Verified Himalayan Cloudburst Records",
+    "model_architecture": "Random Forest Day-Ahead Classifier (ROC-AUC 0.88, Accuracy 84.2%)"
+  },
+  "observed_data": {
+    "rainfall_24h_mm": 3.7,
+    "relative_humidity_2m_pct": 70.0,
+    "temperature_2m_celsius": 10.7,
+    "wind_speed_10m_kmh": 4.4
+  },
+  "prototype_risk_score": {
+    "score": 32.4,
+    "classification": "LOW",
+    "label": "Cloudburst Prototype Risk Score",
+    "weights_used": {
+      "rh2m_atmospheric_saturation": 0.35,
+      "antecedent_precipitation_3d": 0.35,
+      "wind_shear_updraft": 0.15,
+      "thermal_lapse_t2m": 0.15
+    },
+    "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 explicitly NOT an official IMD or USDMA declaration.",
+    "critical_hotspots": [
+      {
+        "hotspot_id": "KED-01",
+        "name": "Kedarnath Temple Outwash Plain",
+        "elevation_m": 3583,
+        "vulnerability_type": "Glacial Outwash Fan & Moraine Dammed Lake Path",
+        "prototype_risk_score": 40.8,
+        "status": "MODERATE",
+        "coordinates": [
+          30.7346,
+          79.0669
+        ]
+      },
+      {
+        "hotspot_id": "KED-02",
+        "name": "Mandakini Valley Fluvial Channel",
+        "elevation_m": 2450,
+        "vulnerability_type": "Steep River Gorge Flash Flood Defile",
+        "prototype_risk_score": 34.8,
+        "status": "LOW",
+        "coordinates": [
+          30.68,
+          79.05
+        ]
+      },
+      {
+        "hotspot_id": "KED-03",
+        "name": "Gaurikund Base Camp & Pilgrim Hub",
+        "elevation_m": 1980,
+        "vulnerability_type": "High Population Density Thermal Spring Base",
+        "prototype_risk_score": 32.3,
+        "status": "LOW",
+        "coordinates": [
+          30.652,
+          79.028
+        ]
+      },
+      {
+        "hotspot_id": "KED-04",
+        "name": "Sonprayag River Confluence",
+        "elevation_m": 1820,
+        "vulnerability_type": "Mandakini-Vasuki Ganga Confluence Choke Point",
+        "prototype_risk_score": 31.4,
+        "status": "LOW",
+        "coordinates": [
+          30.63,
+          79.005
+        ]
+      }
+    ]
+  }
+}

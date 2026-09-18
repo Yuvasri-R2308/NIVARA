@@ -1,0 +1,38 @@
+[
+  {
+    "contact_id": "CONT-001",
+    "name": "NIVARA Demo Emergency Officer 1",
+    "role": "Primary Emergency Officer (First Responder)",
+    "phone": "+919941765204",
+    "zone": "All",
+    "escalation_level": 1,
+    "priority": 1,
+    "is_active": true,
+    "created_at": "2026-08-28T00:00:00Z",
+    "notes": "First responder on-duty for Wayanad District multi-hazard early warning."
+  },
+  {
+    "contact_id": "CONT-002",
+    "name": "NIVARA Demo Emergency Officer 2",
+    "role": "Secondary Emergency Officer (Escalation on Call)",
+    "phone": "+918072778048",
+    "zone": "All",
+    "escalation_level": 2,
+    "priority": 2,
+    "is_active": true,
+    "created_at": "2026-08-28T00:00:00Z",
+    "notes": "Secondary escalation officer triggered if Level 1 does not acknowledge within timeout."
+  },
+  {
+    "contact_id": "CONT-003",
+    "name": "District Emergency Operations Center (DEOC Wayanad)",
+    "role": "District Collectorate Control Center",
+    "phone": "+914936204151",
+    "zone": "Wayanad",
+    "escalation_level": 3,
+    "priority": 3,
+    "is_active": true,
+    "created_at": "2026-08-28T00:00:00Z",
+    "notes": "Command-level tertiary escalation center for district-wide red alert evacuation orders."
+  }
+]

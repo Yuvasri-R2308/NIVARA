@@ -1,4 +1,29 @@
-node_modules/
-dist/
+# Secrets
 .env
-.env.local
+.env.*
+!.env.example
+
+# Node
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Python
+.venv/
+venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+scratch/
+
+# OS
+.DS_Store
+Thumbs.db

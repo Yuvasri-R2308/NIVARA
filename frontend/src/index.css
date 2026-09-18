@@ -1,0 +1,510 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-pine-bg: 11, 18, 15;
+  --color-pine-panel: 18, 28, 24;
+  --color-pine-elevated: 23, 36, 31;
+  --color-pine-border: 37, 53, 46;
+  --color-pine-text: 234, 241, 236;
+  --color-pine-muted: 158, 182, 169;
+  --color-pine-accent: 74, 222, 154;
+  --color-pine-subtle: 28, 44, 36;
+  --color-pine-highlight: 42, 67, 55;
+}
+
+.text-pine-text {
+  color: #EAF1EC !important;
+}
+
+.text-pine-muted {
+  color: #9EB6A9 !important;
+}
+
+@layer base {
+  html, body, #root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 15px; /* Professional high-density command center scale */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #0B120F;
+    color: #EAF1EC;
+    overflow-x: hidden;
+    line-height: 1.5;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.02em;
+    color: #EAF1EC;
+  }
+
+  code, pre {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+/* Custom Deep Pine Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B120F;
+}
+::-webkit-scrollbar-thumb {
+  background: #25352E;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #364e43;
+}
+
+/* Leaflet Customizations for Dark Mode */
+.leaflet-container {
+  background: #0B120F !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #17241F !important;
+  color: #EAF1EC !important;
+  border: 1px solid #25352E !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6) !important;
+}
+
+.leaflet-popup-tip {
+  background: #17241F !important;
+  border: 1px solid #25352E !important;
+}
+
+.leaflet-control-zoom a {
+  background-color: #121C18 !important;
+  color: #EAF1EC !important;
+  border-color: #25352E !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #1c2c24 !important;
+  color: #4ADE9A !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(11, 18, 15, 0.85) !important;
+  color: #8FA79B !important;
+  font-size: 10px !important;
+}
+
+.leaflet-control-attribution a {
+  color: #4ADE9A !important;
+}
+
+/* Big Box Map Markers (Towns, Peaks, Lows, Relocation Sites, Epicenter) */
+.custom-town-marker,
+.custom-dem-peak-marker,
+.custom-dem-low-marker,
+.custom-ranked-site-marker,
+.custom-red-zone-marker {
+  background: transparent !important;
+  border: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: visible !important;
+}
+
+.custom-town-marker:hover,
+.custom-dem-peak-marker:hover,
+.custom-dem-low-marker:hover,
+.custom-ranked-site-marker:hover,
+.custom-red-zone-marker:hover {
+  z-index: 10000 !important;
+}
+
+.custom-town-marker:hover > div,
+.custom-dem-peak-marker:hover > div,
+.custom-dem-low-marker:hover > div,
+.custom-ranked-site-marker:hover > div,
+.custom-red-zone-marker:hover > div {
+  transform: translate(-50%, -100%) scale(1.08) !important;
+  filter: drop-shadow(0 10px 28px rgba(0, 0, 0, 0.95)) !important;
+}
+
+/* =========================================================================
+   LEAFLET GIS COMMAND MAP CUSTOM TOOLTIP RESETS (ELIMINATES WHITE BUBBLES)
+   ========================================================================= */
+.leaflet-tooltip.custom-safe-site-tooltip,
+.leaflet-tooltip.custom-authority-tooltip,
+.leaflet-tooltip.custom-route-tooltip,
+.leaflet-tooltip.custom-habitation-tooltip {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+}
+
+.leaflet-tooltip.custom-safe-site-tooltip::before,
+.leaflet-tooltip.custom-authority-tooltip::before,
+.leaflet-tooltip.custom-route-tooltip::before,
+.leaflet-tooltip.custom-habitation-tooltip::before {
+  display: none !important;
+}
+
+/* =========================================================================
+   NIVARA WORLD-CLASS LIGHT THEME (WHITE / SLATE-50 HIGH CONTRAST)
+   ========================================================================= */
+
+html.light,
+html.light body,
+html.light #root {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+/* Light Theme Variables */
+html.light {
+  --color-pine-bg: 248, 250, 252;
+  --color-pine-panel: 255, 255, 255;
+  --color-pine-elevated: 241, 245, 249;
+  --color-pine-border: 226, 232, 240;
+  --color-pine-text: 15, 23, 42;
+  --color-pine-muted: 100, 116, 139;
+  --color-pine-accent: 5, 150, 105;
+  --color-pine-subtle: 241, 245, 249;
+  --color-pine-highlight: 226, 232, 240;
+}
+
+/* Typography Overrides */
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4,
+html.light h5,
+html.light h6 {
+  color: #0F172A !important;
+}
+
+html.light .text-white,
+html.light .text-slate-100,
+html.light .text-slate-200,
+html.light .text-pine-text {
+  color: #0F172A !important;
+}
+
+html.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400,
+html.light .text-pine-muted {
+  color: #64748B !important;
+}
+
+html.light .text-slate-500 {
+  color: #94A3B8 !important;
+}
+
+/* Surface & Container Overrides */
+html.light [class*="bg-[#070D0A]"],
+html.light [class*="bg-[#0B120F]"],
+html.light .bg-pine-bg {
+  background-color: #F8FAFC !important;
+}
+
+html.light [class*="bg-[#0A1410]"],
+html.light [class*="bg-[#0B1310]"],
+html.light [class*="bg-[#08100C]"] {
+  background-color: #FFFFFF !important;
+}
+
+html.light [class*="bg-[#0C1712]"],
+html.light .bg-pine-panel {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.03) !important;
+}
+
+html.light [class*="bg-[#09120E]"],
+html.light [class*="bg-[#0E1E17]"],
+html.light [class*="bg-[#17241F]"],
+html.light .bg-pine-elevated {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* Border Overrides */
+html.light [class*="border-[#1A2E24]"],
+html.light [class*="border-[#1E3228]"],
+html.light [class*="border-[#25352E]"],
+html.light [class*="border-[#0A1410]"],
+html.light .border-pine-border,
+html.light [class*="border-slate-800"],
+html.light [class*="border-slate-700"] {
+  border-color: #E2E8F0 !important;
+}
+
+html.light [class*="divide-[#1A2E24]"] > * + * {
+  border-color: #E2E8F0 !important;
+}
+
+html.light [class*="hover:bg-[#0E1E17]"]:hover,
+html.light [class*="hover:bg-[#12241C]"]:hover,
+html.light [class*="hover:bg-[#09120E]"]:hover {
+  background-color: #F1F5F9 !important;
+}
+
+/* Form Controls & Inputs */
+html.light input[type="text"],
+html.light input[type="tel"],
+html.light input[type="search"],
+html.light select,
+html.light textarea {
+  background-color: #FFFFFF !important;
+  border-color: #CBD5E1 !important;
+  color: #0F172A !important;
+}
+
+html.light input::placeholder {
+  color: #94A3B8 !important;
+}
+
+/* Tables in Light Mode */
+html.light table thead tr {
+  background-color: #F1F5F9 !important;
+  border-bottom: 2px solid #E2E8F0 !important;
+}
+
+html.light table thead th {
+  color: #475569 !important;
+  font-weight: 700 !important;
+}
+
+html.light table tbody tr {
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+
+html.light table tbody tr:hover {
+  background-color: #F8FAFC !important;
+}
+
+/* Status Badges & Pill Colors in Light Mode */
+html.light .bg-rose-950,
+html.light .bg-rose-950\/80,
+html.light .bg-rose-950\/60,
+html.light .bg-rose-950\/40,
+html.light .bg-rose-950\/30,
+html.light .bg-rose-900\/60 {
+  background-color: #FEE2E2 !important;
+  color: #991B1B !important;
+  border-color: #FCA5A5 !important;
+}
+
+html.light .bg-amber-950,
+html.light .bg-amber-950\/80,
+html.light .bg-amber-950\/60,
+html.light .bg-amber-950\/40,
+html.light .bg-amber-950\/20,
+html.light .bg-amber-900\/60 {
+  background-color: #FEF3C7 !important;
+  color: #92400E !important;
+  border-color: #FCD34D !important;
+}
+
+html.light .bg-emerald-950,
+html.light .bg-emerald-950\/80,
+html.light .bg-emerald-950\/60,
+html.light .bg-emerald-950\/50,
+html.light .bg-emerald-950\/40,
+html.light .bg-emerald-950\/20 {
+  background-color: #D1FAE5 !important;
+  color: #065F46 !important;
+  border-color: #6EE7B7 !important;
+}
+
+html.light .bg-blue-950,
+html.light .bg-blue-950\/80,
+html.light .bg-blue-950\/60 {
+  background-color: #DBEAFE !important;
+  color: #1E40AF !important;
+  border-color: #93C5FD !important;
+}
+
+/* Text color contrast fixes for badges & highlights */
+html.light .text-rose-300,
+html.light .text-rose-400 {
+  color: #DC2626 !important;
+}
+
+html.light .text-amber-300,
+html.light .text-amber-400 {
+  color: #B45309 !important;
+}
+
+html.light .text-emerald-300,
+html.light .text-emerald-400 {
+  color: #047857 !important;
+}
+
+html.light .text-blue-300,
+html.light .text-blue-400 {
+  color: #1D4ED8 !important;
+}
+
+html.light .text-cyan-300,
+html.light .text-cyan-400 {
+  color: #0369A1 !important;
+}
+
+html.light .text-purple-300,
+html.light .text-purple-400 {
+  color: #6D28D9 !important;
+}
+
+/* Leaflet Map Light Mode Overrides */
+html.light .leaflet-container {
+  background: #F1F5F9 !important;
+}
+
+html.light .leaflet-popup-content-wrapper {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+  border: 1px solid #CBD5E1 !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+html.light .leaflet-popup-tip {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+}
+
+html.light .leaflet-control-zoom a {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+}
+
+html.light .leaflet-control-zoom a:hover {
+  background-color: #F1F5F9 !important;
+  color: #059669 !important;
+}
+
+html.light .leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.85) !important;
+  color: #64748B !important;
+}
+
+html.light .leaflet-control-attribution a {
+  color: #059669 !important;
+}
+
+/* GIS Map Light Theme Tooltips Typography Contrast Guarantee */
+html.light .custom-safe-site-tooltip,
+html.light .custom-authority-tooltip,
+html.light .custom-route-tooltip,
+html.light .custom-habitation-tooltip {
+  color: #0F172A !important;
+}
+
+html.light .custom-safe-site-tooltip .text-white,
+html.light .custom-authority-tooltip .text-white,
+html.light .custom-route-tooltip .text-white,
+html.light .custom-habitation-tooltip .text-white,
+html.light .custom-safe-site-tooltip [class*="text-white"],
+html.light .custom-authority-tooltip [class*="text-white"],
+html.light .custom-route-tooltip [class*="text-white"],
+html.light .custom-habitation-tooltip [class*="text-white"] {
+  color: #FFFFFF !important;
+}
+
+/* Light Scrollbars */
+html.light ::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Copilot Chat Light Polish */
+html.light .copilot-chat-container {
+  background-color: #F8FAFC !important;
+}
+
+html.light #official-sitrep-document {
+  background-color: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.08) !important;
+  color: #0F172A !important;
+}
+
+/* Modals & Dialogs in Light Mode */
+html.light .bg-\[\#0E1A15\],
+html.light .bg-\[\#0E1A15\]\/98,
+html.light .bg-\[\#111D18\] {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  color: #0F172A !important;
+}
+
+html.light .bg-black\/80 {
+  background-color: rgba(15, 23, 42, 0.45) !important;
+}
+
+/* Light text tint contrasts */
+html.light .text-emerald-200,
+html.light .text-emerald-100 {
+  color: #047857 !important;
+}
+
+html.light .text-rose-200,
+html.light .text-rose-100 {
+  color: #B91C1C !important;
+}
+
+html.light .text-amber-200,
+html.light .text-amber-100 {
+  color: #B45309 !important;
+}
+
+html.light .text-blue-200,
+html.light .text-blue-100 {
+  color: #1D4ED8 !important;
+}
+
+html.light .text-cyan-200,
+html.light .text-cyan-100 {
+  color: #0369A1 !important;
+}
+
+/* Hover highlights in Light Mode */
+html.light .hover\:bg-pine-panel\/80:hover,
+html.light .hover\:bg-pine-panel:hover {
+  background-color: #F1F5F9 !important;
+}
+
+html.light .hover\:text-white:hover {
+  color: #0F172A !important;
+}
+
+html.light .hover\:bg-emerald-950\/50:hover {
+  background-color: #D1FAE5 !important;
+}
+
+html.light .hover\:bg-\[\#12241C\]:hover {
+  background-color: #E2E8F0 !important;
+}

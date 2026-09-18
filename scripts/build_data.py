@@ -159,18 +159,58 @@ for idx, row in df_parcels.iterrows():
     soil_factor = (soil_m * 100.0) * 0.10
 
     # RPI calculation
-    hist_weight = 1.0 if v_name == 'Meppadi' else 0.4
+    hist_weight = 1.0 if v_name == 'Meppadi' else (0.5 if v_name == 'Achooranam' else 0.3)
     rpi = (0.45 * r_score) + (0.25 * min(100.0, pop_dens / 8.0)) + (0.15 * min(100.0, dist_road / 5.0)) + (0.15 * hist_weight * 100.0)
     rpi = round(min(100.0, max(0.0, rpi)), 2)
 
-    if r_level == 'HIGH' or rpi >= 75.0:
+    # Multi-Village Geotechnical Urgency Phasing
+    if v_name == 'Meppadi':
+        # Disaster Epicenter: 100% immediate emergency physical evacuation
         urgency_phase = 'Immediate'
-    elif r_level == 'MEDIUM' and rpi >= 50.0:
-        urgency_phase = 'Short-Term'
-    elif r_level == 'MEDIUM':
-        urgency_phase = 'Medium-Term'
+        rec_action = "Immediate mandatory physical evacuation to Kalpetta-Vythiri Institutional Reserve."
+    elif v_name == 'Achooranam':
+        # Slope Hazard Zone: Phased hillside fortification & relocation
+        if r_score >= 55.0 or rpi >= 70.0:
+            urgency_phase = 'Short-Term'
+            rec_action = "Short-term slope mitigation; construct retaining walls along estate roads."
+        elif r_score >= 38.0:
+            urgency_phase = 'Medium-Term'
+            rec_action = "Medium-term terrace gully drainage and slope creep monitoring."
+        else:
+            urgency_phase = 'Monitor'
+            rec_action = "Routine monitor; stable agricultural foothill baseline."
+    elif v_name == 'Kottathara':
+        # River Valley Zone: Seasonal flood protection & riverbank buffering
+        if r_score >= 55.0 or rpi >= 70.0:
+            urgency_phase = 'Short-Term'
+            rec_action = "Short-term flood protection; reinforce Kabini riverbanks and bunds."
+        elif r_score >= 38.0:
+            urgency_phase = 'Medium-Term'
+            rec_action = "Medium-term drainage dredging and 30m river buffer enforcement."
+        else:
+            urgency_phase = 'Monitor'
+            rec_action = "Routine monitor; low-elevation agricultural terrace."
+    elif v_name == 'Kuppadithara':
+        # Flatland Plateau / Safe Resettlement Zone
+        if r_score >= 55.0:
+            urgency_phase = 'Medium-Term'
+            rec_action = "Medium-term municipal stormwater runoff management."
+        else:
+            urgency_phase = 'Monitor'
+            rec_action = "Routine monitor; confirmed safe baseline for community resettlement."
     else:
-        urgency_phase = 'Monitor'
+        if r_score >= 70.0:
+            urgency_phase = 'Immediate'
+            rec_action = "Immediate relocation to designated safe zone."
+        elif r_score >= 50.0:
+            urgency_phase = 'Short-Term'
+            rec_action = "Short-term structural mitigation and slope reinforcement."
+        elif r_score >= 35.0:
+            urgency_phase = 'Medium-Term'
+            rec_action = "Medium-term drainage maintenance."
+        else:
+            urgency_phase = 'Monitor'
+            rec_action = "Routine baseline monitoring."
 
     parcels_clean.append({
         "parcel_id": p_id,
@@ -201,7 +241,7 @@ for idx, row in df_parcels.iterrows():
         "risk_level": r_level,
         "risk_rank": int(row.get('risk_rank_within_village', 1)) if pd.notnull(row.get('risk_rank_within_village')) else 1,
         "relocation_screening": str(row.get('relocation_screening', '')),
-        "recommended_action": str(row.get('recommended_action', '')),
+        "recommended_action": rec_action,
         "hazard_screening_basis": str(row.get('hazard_screening_basis', '')),
         "rpi_score": rpi,
         "urgency_phase": urgency_phase,

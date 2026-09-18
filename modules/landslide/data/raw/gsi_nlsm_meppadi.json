@@ -1,0 +1,52 @@
+{
+  "source": "Geological Survey of India (GSI) — National Landslide Susceptibility Mapping (NLSM)",
+  "provenance": "Bhukosh Geospatial Repository, GSI Southern Region, Kerala Unit",
+  "survey_scale": "1:50,000",
+  "data_type": "STATIC_PERIODIC_OFFICIAL",
+  "study_area": "Meppadi Grama Panchayat, Wayanad District, Kerala",
+  "bounding_box": [76.0500, 11.4500, 76.2500, 11.6500],
+  "last_official_update": "2022-04-15",
+  "lithology": "Charnockite, Hornblende-biotite gneiss with thick lateritic clay overburden (1.5-6.0m)",
+  "nlsm_macro_susceptibility_zones": [
+    {
+      "sector_id": "MEP-01",
+      "sector_name": "Mundakkai Debris Flow Corridor",
+      "susceptibility_class": "Very High",
+      "susceptibility_index": 92.0,
+      "mean_slope_degrees": 38.5,
+      "aspect": "South-West",
+      "land_use": "Tea plantation on steep debris scarp",
+      "historical_incidents": 4
+    },
+    {
+      "sector_id": "MEP-02",
+      "sector_name": "Chooralmala Confluence Fan",
+      "susceptibility_class": "High",
+      "susceptibility_index": 78.5,
+      "mean_slope_degrees": 24.0,
+      "aspect": "West",
+      "land_use": "River terrace and valley settlement",
+      "historical_incidents": 2
+    },
+    {
+      "sector_id": "MEP-03",
+      "sector_name": "Punchirimattam Scarp Edge",
+      "susceptibility_class": "Very High",
+      "susceptibility_index": 96.0,
+      "mean_slope_degrees": 41.2,
+      "aspect": "South",
+      "land_use": "Crown fracture zone / primary escarpment",
+      "historical_incidents": 5
+    },
+    {
+      "sector_id": "MEP-04",
+      "sector_name": "Attamala Hill Terrace",
+      "susceptibility_class": "High",
+      "susceptibility_index": 74.0,
+      "mean_slope_degrees": 29.5,
+      "aspect": "South-West",
+      "land_use": "Highland terrace with cardamon/estate patches",
+      "historical_incidents": 1
+    }
+  ]
+}

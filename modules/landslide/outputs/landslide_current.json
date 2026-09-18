@@ -1,0 +1,90 @@
+{
+  "hazard": "landslide",
+  "module_name": "Meppadi Landslide Vulnerability & Early Warning",
+  "study_area": {
+    "location_name": "Meppadi, Wayanad, Kerala",
+    "coordinates": [
+      11.551,
+      76.126
+    ],
+    "aoi_bounding_box": {
+      "min_latitude": 11.45,
+      "max_latitude": 11.65,
+      "min_longitude": 76.05,
+      "max_longitude": 76.25
+    }
+  },
+  "status": "LIVE",
+  "observation_time": "2026-09-16T08:00",
+  "download_time": "2026-09-16T08:44:06.587018+00:00",
+  "provenance": {
+    "static_susceptibility_source": "Geological Survey of India (GSI) \u2014 National Landslide Susceptibility Mapping (NLSM)",
+    "static_data_scale": "1:50,000",
+    "trigger_source": "Open-Meteo Ground API (MOSDAC/IMD Validation Alignment)",
+    "access_method": "GSI Bhukosh OCBIS Ingestion (Static) + Open-Meteo REST (Live Validation)"
+  },
+  "observed_data": {
+    "rainfall_1h_mm": 0.2,
+    "rainfall_3h_mm": 0.2,
+    "rainfall_24h_mm": 2.6,
+    "soil_saturation_pct": 70.2,
+    "critical_cloudburst_threshold_mm": 280.0
+  },
+  "prototype_risk_score": {
+    "score": 48.5,
+    "classification": "MEDIUM",
+    "label": "Landslide Prototype Risk Score",
+    "weights_used": {
+      "gsi_static_susceptibility": 0.4,
+      "short_duration_rainfall": 0.4,
+      "soil_pore_saturation": 0.2
+    },
+    "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 explicitly NOT an official GSI or IMD warning.",
+    "sectors": [
+      {
+        "sector_id": "MEP-01",
+        "sector_name": "Mundakkai Debris Flow Corridor",
+        "gsi_nlsm_class": "Very High",
+        "gsi_susceptibility_score": 92.0,
+        "mean_slope_degrees": 38.5,
+        "prototype_risk_score": 51.2,
+        "risk_level": "MEDIUM",
+        "rainfall_trigger_score": 0.9,
+        "soil_saturation_pct": 70.2
+      },
+      {
+        "sector_id": "MEP-02",
+        "sector_name": "Chooralmala Confluence Fan",
+        "gsi_nlsm_class": "High",
+        "gsi_susceptibility_score": 78.5,
+        "mean_slope_degrees": 24.0,
+        "prototype_risk_score": 45.8,
+        "risk_level": "MEDIUM",
+        "rainfall_trigger_score": 0.9,
+        "soil_saturation_pct": 70.2
+      },
+      {
+        "sector_id": "MEP-03",
+        "sector_name": "Punchirimattam Scarp Edge",
+        "gsi_nlsm_class": "Very High",
+        "gsi_susceptibility_score": 96.0,
+        "mean_slope_degrees": 41.2,
+        "prototype_risk_score": 52.8,
+        "risk_level": "MEDIUM",
+        "rainfall_trigger_score": 0.9,
+        "soil_saturation_pct": 70.2
+      },
+      {
+        "sector_id": "MEP-04",
+        "sector_name": "Attamala Hill Terrace",
+        "gsi_nlsm_class": "High",
+        "gsi_susceptibility_score": 74.0,
+        "mean_slope_degrees": 29.5,
+        "prototype_risk_score": 44.0,
+        "risk_level": "MEDIUM",
+        "rainfall_trigger_score": 0.9,
+        "soil_saturation_pct": 70.2
+      }
+    ]
+  }
+}

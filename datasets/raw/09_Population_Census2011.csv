@@ -1,0 +1,5 @@
+place,geographic_unit,population,population_year,male_population,female_population,source,source_type,use_in_project,caution,prototype_population_class
+Mundakkai–Chooralmala / Meppadi,Meppadi Grama Panchayat (hazard-source area proxy),37785,2011,,,"Kerala State Disaster Management Authority, Meppadi Landslide PDNA",Official KSDMA,Hazard-source population/context,"This is Meppadi Grama Panchayat population, not a separate Mundakkai–Chooralmala census population.",High (source-area context)
+Achooranam,Census Village,11998,2011,5753.0,6245.0,"Census of India 2011 / Kerala District Census Handbook, Wayanad",Official Census,Relocation population / capacity context,Village-level Census 2011 value.,Medium
+Kuppadithara,Census Village,9761,2011,4764.0,4997.0,"Census of India 2011 / Kerala District Census Handbook, Wayanad",Official Census,Relocation population / capacity context,Village-level Census 2011 value.,Low
+Kottathara,Census Village,17295,2011,8489.0,8806.0,"Census of India 2011 / Kerala District Census Handbook, Wayanad",Official Census,Relocation population / capacity context,Village-level Census 2011 value.,High

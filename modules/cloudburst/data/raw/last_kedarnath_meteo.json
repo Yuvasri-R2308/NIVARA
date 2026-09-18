@@ -1,0 +1,22 @@
+{
+  "source": "IMD High-Altitude Himalayan AWS Network & Open-Meteo Alpine Feeds",
+  "study_area": "Kedarnath, Mandakini Valley, Rudraprayag District, Uttarakhand",
+  "coordinates": [
+    30.7346,
+    79.0669
+  ],
+  "elevation_m": 3583,
+  "observation_time": "2026-09-16T09:00",
+  "download_time": "2026-09-16T09:04:34.857477+00:00",
+  "status": "LIVE",
+  "atmospheric_observations": {
+    "rainfall_24h_mm": 3.7,
+    "relative_humidity_2m_pct": 70.0,
+    "temperature_2m_celsius": 10.7,
+    "wind_speed_10m_kmh": 4.4
+  },
+  "historical_baseline_context": {
+    "events_in_nasa_db": 167,
+    "historical_max_rain_mm": 144.2
+  }
+}

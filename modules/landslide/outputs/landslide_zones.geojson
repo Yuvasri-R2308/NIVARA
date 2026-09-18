@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.147,
+              11.526
+            ],
+            [
+              76.163,
+              11.526
+            ],
+            [
+              76.163,
+              11.538
+            ],
+            [
+              76.147,
+              11.538
+            ],
+            [
+              76.147,
+              11.526
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sector_id": "MEP-01",
+        "name": "Mundakkai Debris Flow Corridor",
+        "hazard": "landslide",
+        "study_location": "Meppadi, Wayanad",
+        "prototype_risk_score": 51.2,
+        "risk_level": "MEDIUM",
+        "gsi_nlsm_class": "Very High",
+        "slope_deg": 38.5,
+        "rainfall_24h_mm": 2.6,
+        "soil_saturation_pct": 70.2,
+        "observation_time": "2026-09-16T08:00",
+        "status": "LIVE",
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official GSI or IMD hazard determination."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.134,
+              11.539
+            ],
+            [
+              76.15,
+              11.539
+            ],
+            [
+              76.15,
+              11.551
+            ],
+            [
+              76.134,
+              11.551
+            ],
+            [
+              76.134,
+              11.539
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sector_id": "MEP-02",
+        "name": "Chooralmala Confluence Fan",
+        "hazard": "landslide",
+        "study_location": "Meppadi, Wayanad",
+        "prototype_risk_score": 45.8,
+        "risk_level": "MEDIUM",
+        "gsi_nlsm_class": "High",
+        "slope_deg": 24.0,
+        "rainfall_24h_mm": 2.6,
+        "soil_saturation_pct": 70.2,
+        "observation_time": "2026-09-16T08:00",
+        "status": "LIVE",
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official GSI or IMD hazard determination."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.154,
+              11.522
+            ],
+            [
+              76.17,
+              11.522
+            ],
+            [
+              76.17,
+              11.534
+            ],
+            [
+              76.154,
+              11.534
+            ],
+            [
+              76.154,
+              11.522
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sector_id": "MEP-03",
+        "name": "Punchirimattam Scarp Edge",
+        "hazard": "landslide",
+        "study_location": "Meppadi, Wayanad",
+        "prototype_risk_score": 52.8,
+        "risk_level": "MEDIUM",
+        "gsi_nlsm_class": "Very High",
+        "slope_deg": 41.2,
+        "rainfall_24h_mm": 2.6,
+        "soil_saturation_pct": 70.2,
+        "observation_time": "2026-09-16T08:00",
+        "status": "LIVE",
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official GSI or IMD hazard determination."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.123,
+              11.532
+            ],
+            [
+              76.139,
+              11.532
+            ],
+            [
+              76.139,
+              11.544
+            ],
+            [
+              76.123,
+              11.544
+            ],
+            [
+              76.123,
+              11.532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sector_id": "MEP-04",
+        "name": "Attamala Hill Terrace",
+        "hazard": "landslide",
+        "study_location": "Meppadi, Wayanad",
+        "prototype_risk_score": 44.0,
+        "risk_level": "MEDIUM",
+        "gsi_nlsm_class": "High",
+        "slope_deg": 29.5,
+        "rainfall_24h_mm": 2.6,
+        "soil_saturation_pct": 70.2,
+        "observation_time": "2026-09-16T08:00",
+        "status": "LIVE",
+        "disclaimer": "Prototype Risk Score calculated by NIVARA model \u2014 Not an official GSI or IMD hazard determination."
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "source": "NASA Prediction Of Worldwide Energy Resources (POWER) Daily Time Series & IMD Historical Database",
+  "study_area": "Kedarnath, Mandakini Valley, Uttarakhand (30.7346°N, 79.0669°E, 3583m)",
+  "dataset_range": "1988 - 2024 (36-year daily continuous series)",
+  "verified_cloudburst_events_count": 167,
+  "climatological_metrics": {
+    "historical_max_24h_rainfall_mm": 144.2,
+    "june_mean_precipitation_mm": 285.4,
+    "june_mean_relative_humidity_pct": 78.5,
+    "top_predictive_features": [
+      {"feature": "RH2M", "importance_pct": 8.87, "role": "Atmospheric saturation trigger"},
+      {"feature": "PRECTOT_3d_mean", "importance_pct": 7.92, "role": "Orogenic catchment pre-saturation"},
+      {"feature": "WS2M_lag1", "importance_pct": 7.49, "role": "Convective shear and moisture advection"},
+      {"feature": "T2M", "importance_pct": 6.92, "role": "Thermal buoyancy for cloudburst updrafts"}
+    ]
+  },
+  "historical_benchmark_event": {
+    "event_name": "Kedarnath Disaster Catastrophic Cloudburst",
+    "date": "2013-06-16",
+    "rainfall_24h_mm": 116.3,
+    "day_ahead_model_probability": 0.858,
+    "classification": "CRITICAL ALERT (Day-Ahead Catch)"
+  }
+}

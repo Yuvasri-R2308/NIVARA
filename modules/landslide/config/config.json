@@ -1,0 +1,65 @@
+{
+  "hazard": "landslide",
+  "name": "NIVARA Landslide Early Warning & Susceptibility Module",
+  "version": "1.0.0",
+  "study_area": {
+    "location_name": "Meppadi, Wayanad, Kerala",
+    "village": "Meppadi",
+    "district": "Wayanad",
+    "state": "Kerala",
+    "coordinates": {
+      "latitude": 11.5510,
+      "longitude": 76.1260,
+      "elevation_meters": 780
+    },
+    "aoi_bounding_box": {
+      "min_latitude": 11.4500,
+      "max_latitude": 11.6500,
+      "min_longitude": 76.0500,
+      "max_longitude": 76.2500
+    },
+    "critical_sectors": [
+      { "id": "MEP-01", "name": "Mundakkai Debris Flow Origin", "coordinates": [11.5320, 76.1550], "slope_deg": 38.5, "gsi_nlsm_class": "Very High" },
+      { "id": "MEP-02", "name": "Chooralmala Confluence Fan", "coordinates": [11.5450, 76.1420], "slope_deg": 24.0, "gsi_nlsm_class": "High" },
+      { "id": "MEP-03", "name": "Punchirimattam Scarp Edge", "coordinates": [11.5280, 76.1620], "slope_deg": 41.2, "gsi_nlsm_class": "Very High" },
+      { "id": "MEP-04", "name": "Attamala Hill Terrace", "coordinates": [11.5380, 76.1310], "slope_deg": 29.5, "gsi_nlsm_class": "High" }
+    ]
+  },
+  "data_sources": {
+    "gsi_bhukosh": {
+      "name": "Geological Survey of India (GSI) — National Landslide Susceptibility Mapping (NLSM)",
+      "portal_url": "https://bhukosh.gsi.gov.in/",
+      "access_status": "MANUAL_BULK_DOWNLOAD_ONLY",
+      "notes": "GSI Bhukosh operates on an authenticated ArcGIS/OCBIS portal with no open public REST API. Macro-susceptibility classes (1:50,000 scale) are verified and stored locally in data/raw/gsi_nlsm_meppadi.json."
+    },
+    "rainfall_trigger": {
+      "name": "MOSDAC INSAT-3D/3DR Hydro-Estimator (HEM) & IMD Automatic Weather Station",
+      "mosdac_portal": "https://mosdac.gov.in/",
+      "imd_portal": "https://mausam.imd.gov.in/",
+      "open_meteo_fallback": "https://api.open-meteo.com/v1/forecast",
+      "update_interval_minutes": 30
+    }
+  },
+  "thresholds": {
+    "rainfall_24h_mm": {
+      "advisory": 64.5,
+      "warning": 115.5,
+      "danger": 150.0,
+      "catastrophic": 280.0
+    },
+    "soil_moisture_saturation_pct": {
+      "moderate": 65.0,
+      "high": 80.0,
+      "critical": 90.0
+    }
+  },
+  "risk_weights": {
+    "gsi_static_susceptibility": 0.40,
+    "short_duration_rainfall": 0.40,
+    "soil_pore_saturation": 0.20
+  },
+  "outputs": {
+    "current_snapshot": "outputs/landslide_current.json",
+    "geojson": "outputs/landslide_zones.geojson"
+  }
+}

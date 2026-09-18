@@ -1,0 +1,21 @@
+record_id,location,latitude,longitude,soil_depth_m,soil_depth_type,data_status,source
+SOILDEPTH-001,Kalpetta,11.6085,76.0837,1.81,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-002,Mananthavady,11.8,76.0,1.05,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-003,Sulthan Bathery,11.6643,76.257,1.18,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-004,Meppadi,11.554,76.132,0.51,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-005,Vythiri,11.551,76.02,0.91,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-006,Panamaram,11.672,76.073,1.2,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-007,Pozhuthana,11.548,76.049,0.63,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-008,Padinjarathara,11.672,75.985,1.32,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-009,Thirunelly,11.902,75.989,0.88,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-010,Ambalavayal,11.603,76.208,1.02,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-011,Mullankolly,11.716,76.167,0.88,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-012,Pulpally,11.709,76.216,1.98,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-013,Noolpuzha,11.556,76.292,1.14,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-014,Edavaka,11.79,76.03,0.67,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-015,Tiriyode,11.636,75.995,1.52,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-016,Kaniyambetta,11.675,76.071,0.6,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-017,Kottathara,11.666,75.951,1.24,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-018,Muttil,11.604,76.052,0.3,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-019,Kuppadithara,11.673,75.997,0.55,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data
+SOILDEPTH-020,Thavinhal,11.85,75.97,1.24,REGIONAL_PROTOTYPE,SYNTHETIC_PROTOTYPE,GSI / soil survey - replace with official published soil-depth data

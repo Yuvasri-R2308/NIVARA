@@ -1,0 +1,82 @@
+{
+  "module_id": "coastal-03",
+  "hazard_type": "coastal_erosion",
+  "name": "Podampeta Coastal Erosion & Wave Action Monitoring",
+  "study_area": {
+    "name": "Podampeta Coastal Sector, Ganjam District, Odisha",
+    "state": "Odisha",
+    "district": "Ganjam",
+    "coastal_stretch": "Rushikulya Estuary to Gopalpur Coast",
+    "coordinates": {
+      "latitude": 19.3780,
+      "longitude": 85.0450
+    },
+    "aoi_bounding_box": [84.9500, 19.2800, 85.1500, 19.4800],
+    "critical_transects": [
+      {
+        "id": "POD-T01",
+        "name": "Old Podampeta Abandoned Village Scarp",
+        "coordinates": [19.3780, 85.0450],
+        "historic_erosion_m_yr": 2.4,
+        "exposure_class": "Critical Dune Loss",
+        "settlement_status": "Evacuated / Ghost Village"
+      },
+      {
+        "id": "POD-T02",
+        "name": "Rushikulya Olive Ridley Nesting Beach",
+        "coordinates": [19.3850, 85.0530],
+        "historic_erosion_m_yr": 1.8,
+        "exposure_class": "Severe Sandy Spit Breach",
+        "settlement_status": "Ecological Reserve"
+      },
+      {
+        "id": "POD-T03",
+        "name": "New Podampeta Resettlement Colony",
+        "coordinates": [19.3710, 85.0380],
+        "historic_erosion_m_yr": 0.9,
+        "exposure_class": "Armored Embankment",
+        "settlement_status": "Permanent Resettlement"
+      },
+      {
+        "id": "POD-T04",
+        "name": "Gokharkuda Fishery Landing Beach",
+        "coordinates": [19.3620, 85.0290],
+        "historic_erosion_m_yr": 2.1,
+        "exposure_class": "High Coastal Bluff Undercutting",
+        "settlement_status": "Active Fishing Settlement"
+      }
+    ]
+  },
+  "erddap_sources": {
+    "base_url": "https://erddap.incois.gov.in/erddap",
+    "dataset_id": "wrb_gopalpur",
+    "ocean_state_model": "osf_high_res",
+    "fallback_metocean_url": "https://marine-api.open-meteo.com/v1/marine"
+  },
+  "thresholds": {
+    "significant_wave_height_m": {
+      "slight": 1.25,
+      "moderate": 2.0,
+      "rough": 3.0,
+      "very_rough": 4.0,
+      "high_cyclonic": 5.0
+    },
+    "peak_wave_period_s": {
+      "wind_waves": 6.0,
+      "intermediate_swell": 9.0,
+      "long_period_swell": 14.0
+    },
+    "storm_surge_m": {
+      "minor": 0.30,
+      "moderate": 0.70,
+      "severe": 1.20
+    }
+  },
+  "risk_weights": {
+    "wave_energy_height": 0.45,
+    "surge_and_tidal_stage": 0.20,
+    "satellite_shoreline_retreat_rate": 0.35,
+    "rainfall": 0.0
+  },
+  "update_interval_minutes": 60
+}

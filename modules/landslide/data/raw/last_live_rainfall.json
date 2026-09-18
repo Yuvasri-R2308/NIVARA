@@ -1,0 +1,15 @@
+{
+  "source": "Open-Meteo Ground API (MOSDAC/IMD Validation Alignment)",
+  "observation_time": "2026-09-16T08:00",
+  "download_time": "2026-09-16T08:44:04.156463+00:00",
+  "status": "LIVE",
+  "coordinates": [
+    11.551,
+    76.126
+  ],
+  "rainfall_1h_mm": 0.2,
+  "rainfall_3h_mm": 0.2,
+  "rainfall_24h_mm": 2.6,
+  "soil_moisture_m3_m3": 0.337,
+  "soil_saturation_pct": 70.2
+}

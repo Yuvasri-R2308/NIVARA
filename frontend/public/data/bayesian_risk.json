@@ -1,0 +1,284 @@
+{
+  "metadata": {
+    "model_name": "NIVARA Bayesian Landslide Hazard Estimator",
+    "version": "1.0-prototype",
+    "description": "Empirical Bayesian probability updating for landslide hazard estimation given multi-factor environmental evidence.",
+    "target_district": "Wayanad, Kerala",
+    "prior_distribution": "Beta(1.5, 8.5) ~ 15% baseline regional prior",
+    "disclaimer": "Decision-support research prototype. Not an official government emergency warning authority."
+  },
+  "areas": {
+    "Meppadi": {
+      "area": "Meppadi (Mundakkai / Chooralmala)",
+      "category": "Disaster Epicenter",
+      "landslide_probability": 0.89,
+      "lower_bound": 0.82,
+      "upper_bound": 0.96,
+      "credible_interval_str": "82%\u201396%",
+      "risk": "VERY HIGH",
+      "hri_score": 84.46,
+      "model_status": "Prototype / Empirical Beta-Logit Inference",
+      "evidence_breakdown": {
+        "rainfall_evidence": {
+          "metric": "284.5 mm",
+          "contribution_pct": 34.9,
+          "description": "24h precipitation exceedance relative to 285mm cloudburst threshold."
+        },
+        "slope_evidence": {
+          "metric": "38.5\u00b0",
+          "contribution_pct": 28.9,
+          "description": "Topographic scarp angle relative to 40\u00b0 regolith stability threshold."
+        },
+        "soil_moisture_evidence": {
+          "metric": "98.0%",
+          "contribution_pct": 19.6,
+          "description": "Subsurface pore pressure saturation driving soil liquefaction."
+        },
+        "historical_evidence": {
+          "metric": "95.0%",
+          "contribution_pct": 14.2,
+          "description": "Historical GSI landslide recurrence frequency in catchment."
+        }
+      },
+      "why_this_probability": "Posterior probability of 89% (95% CI: 82%\u201396%) is driven primarily by 284.5mm precipitation (35% contribution) and 38.5\u00b0 terrain gradient (29% contribution), updating regional prior (15%) under Bayesian log-likelihood evidence fusion."
+    },
+    "Achooranam": {
+      "area": "Achooranam (Plantation Foothills)",
+      "category": "Slope Hazard Zone",
+      "landslide_probability": 0.49,
+      "lower_bound": 0.37,
+      "upper_bound": 0.6,
+      "credible_interval_str": "37%\u201360%",
+      "risk": "MEDIUM",
+      "hri_score": 44.3,
+      "model_status": "Prototype / Empirical Beta-Logit Inference",
+      "evidence_breakdown": {
+        "rainfall_evidence": {
+          "metric": "178.0 mm",
+          "contribution_pct": 21.9,
+          "description": "24h precipitation exceedance relative to 285mm cloudburst threshold."
+        },
+        "slope_evidence": {
+          "metric": "18.2\u00b0",
+          "contribution_pct": 13.6,
+          "description": "Topographic scarp angle relative to 40\u00b0 regolith stability threshold."
+        },
+        "soil_moisture_evidence": {
+          "metric": "71.0%",
+          "contribution_pct": 14.2,
+          "description": "Subsurface pore pressure saturation driving soil liquefaction."
+        },
+        "historical_evidence": {
+          "metric": "48.0%",
+          "contribution_pct": 7.2,
+          "description": "Historical GSI landslide recurrence frequency in catchment."
+        }
+      },
+      "why_this_probability": "Posterior probability of 49% (95% CI: 37%\u201360%) is driven primarily by 178.0mm precipitation (22% contribution) and 18.2\u00b0 terrain gradient (14% contribution), updating regional prior (15%) under Bayesian log-likelihood evidence fusion."
+    },
+    "Kottathara": {
+      "area": "Kottathara (Kabini River Basin)",
+      "category": "River Valley Zone",
+      "landslide_probability": 0.4,
+      "lower_bound": 0.29,
+      "upper_bound": 0.51,
+      "credible_interval_str": "29%\u201351%",
+      "risk": "MEDIUM",
+      "hri_score": 44.1,
+      "model_status": "Prototype / Empirical Beta-Logit Inference",
+      "evidence_breakdown": {
+        "rainfall_evidence": {
+          "metric": "154.0 mm",
+          "contribution_pct": 18.9,
+          "description": "24h precipitation exceedance relative to 285mm cloudburst threshold."
+        },
+        "slope_evidence": {
+          "metric": "6.5\u00b0",
+          "contribution_pct": 4.9,
+          "description": "Topographic scarp angle relative to 40\u00b0 regolith stability threshold."
+        },
+        "soil_moisture_evidence": {
+          "metric": "82.0%",
+          "contribution_pct": 16.4,
+          "description": "Subsurface pore pressure saturation driving soil liquefaction."
+        },
+        "historical_evidence": {
+          "metric": "68.0%",
+          "contribution_pct": 10.2,
+          "description": "Historical GSI landslide recurrence frequency in catchment."
+        }
+      },
+      "why_this_probability": "Posterior probability of 40% (95% CI: 29%\u201351%) is driven primarily by 154.0mm precipitation (19% contribution) and 6.5\u00b0 terrain gradient (5% contribution), updating regional prior (15%) under Bayesian log-likelihood evidence fusion."
+    },
+    "Kuppadithara": {
+      "area": "Kuppadithara (Stable Agricultural Plateau)",
+      "category": "Flatland Buffer",
+      "landslide_probability": 0.24,
+      "lower_bound": 0.14,
+      "upper_bound": 0.34,
+      "credible_interval_str": "14%\u201334%",
+      "risk": "LOW",
+      "hri_score": 40.7,
+      "model_status": "Prototype / Empirical Beta-Logit Inference",
+      "evidence_breakdown": {
+        "rainfall_evidence": {
+          "metric": "138.4 mm",
+          "contribution_pct": 17.0,
+          "description": "24h precipitation exceedance relative to 285mm cloudburst threshold."
+        },
+        "slope_evidence": {
+          "metric": "5.8\u00b0",
+          "contribution_pct": 4.3,
+          "description": "Topographic scarp angle relative to 40\u00b0 regolith stability threshold."
+        },
+        "soil_moisture_evidence": {
+          "metric": "54.0%",
+          "contribution_pct": 10.8,
+          "description": "Subsurface pore pressure saturation driving soil liquefaction."
+        },
+        "historical_evidence": {
+          "metric": "25.0%",
+          "contribution_pct": 3.8,
+          "description": "Historical GSI landslide recurrence frequency in catchment."
+        }
+      },
+      "why_this_probability": "Posterior probability of 24% (95% CI: 14%\u201334%) is driven primarily by 138.4mm precipitation (17% contribution) and 5.8\u00b0 terrain gradient (4% contribution), updating regional prior (15%) under Bayesian log-likelihood evidence fusion."
+    },
+    "Vythiri": {
+      "area": "Vythiri (Ghat Pass Corridor)",
+      "category": "Slope Hazard Zone",
+      "landslide_probability": 0.63,
+      "lower_bound": 0.52,
+      "upper_bound": 0.74,
+      "credible_interval_str": "52%\u201374%",
+      "risk": "HIGH",
+      "hri_score": 58.2,
+      "model_status": "Prototype / Empirical Beta-Logit Inference",
+      "evidence_breakdown": {
+        "rainfall_evidence": {
+          "metric": "220.0 mm",
+          "contribution_pct": 27.0,
+          "description": "24h precipitation exceedance relative to 285mm cloudburst threshold."
+        },
+        "slope_evidence": {
+          "metric": "22.4\u00b0",
+          "contribution_pct": 16.8,
+          "description": "Topographic scarp angle relative to 40\u00b0 regolith stability threshold."
+        },
+        "soil_moisture_evidence": {
+          "metric": "79.0%",
+          "contribution_pct": 15.8,
+          "description": "Subsurface pore pressure saturation driving soil liquefaction."
+        },
+        "historical_evidence": {
+          "metric": "58.0%",
+          "contribution_pct": 8.7,
+          "description": "Historical GSI landslide recurrence frequency in catchment."
+        }
+      },
+      "why_this_probability": "Posterior probability of 63% (95% CI: 52%\u201374%) is driven primarily by 220.0mm precipitation (27% contribution) and 22.4\u00b0 terrain gradient (17% contribution), updating regional prior (15%) under Bayesian log-likelihood evidence fusion."
+    },
+    "Padinharethara": {
+      "area": "Padinharethara (Banasura Reservoir Zone)",
+      "category": "River Valley Zone",
+      "landslide_probability": 0.34,
+      "lower_bound": 0.24,
+      "upper_bound": 0.45,
+      "credible_interval_str": "24%\u201345%",
+      "risk": "LOW",
+      "hri_score": 38.6,
+      "model_status": "Prototype / Empirical Beta-Logit Inference",
+      "evidence_breakdown": {
+        "rainfall_evidence": {
+          "metric": "165.0 mm",
+          "contribution_pct": 20.3,
+          "description": "24h precipitation exceedance relative to 285mm cloudburst threshold."
+        },
+        "slope_evidence": {
+          "metric": "9.4\u00b0",
+          "contribution_pct": 7.1,
+          "description": "Topographic scarp angle relative to 40\u00b0 regolith stability threshold."
+        },
+        "soil_moisture_evidence": {
+          "metric": "64.0%",
+          "contribution_pct": 12.8,
+          "description": "Subsurface pore pressure saturation driving soil liquefaction."
+        },
+        "historical_evidence": {
+          "metric": "38.0%",
+          "contribution_pct": 5.7,
+          "description": "Historical GSI landslide recurrence frequency in catchment."
+        }
+      },
+      "why_this_probability": "Posterior probability of 34% (95% CI: 24%\u201345%) is driven primarily by 165.0mm precipitation (20% contribution) and 9.4\u00b0 terrain gradient (7% contribution), updating regional prior (15%) under Bayesian log-likelihood evidence fusion."
+    },
+    "Mananthavady": {
+      "area": "Mananthavady (Northern Plains)",
+      "category": "River Valley Zone",
+      "landslide_probability": 0.29,
+      "lower_bound": 0.18,
+      "upper_bound": 0.39,
+      "credible_interval_str": "18%\u201339%",
+      "risk": "LOW",
+      "hri_score": 32.4,
+      "model_status": "Prototype / Empirical Beta-Logit Inference",
+      "evidence_breakdown": {
+        "rainfall_evidence": {
+          "metric": "142.0 mm",
+          "contribution_pct": 17.4,
+          "description": "24h precipitation exceedance relative to 285mm cloudburst threshold."
+        },
+        "slope_evidence": {
+          "metric": "4.8\u00b0",
+          "contribution_pct": 3.6,
+          "description": "Topographic scarp angle relative to 40\u00b0 regolith stability threshold."
+        },
+        "soil_moisture_evidence": {
+          "metric": "66.0%",
+          "contribution_pct": 13.2,
+          "description": "Subsurface pore pressure saturation driving soil liquefaction."
+        },
+        "historical_evidence": {
+          "metric": "42.0%",
+          "contribution_pct": 6.3,
+          "description": "Historical GSI landslide recurrence frequency in catchment."
+        }
+      },
+      "why_this_probability": "Posterior probability of 29% (95% CI: 18%\u201339%) is driven primarily by 142.0mm precipitation (17% contribution) and 4.8\u00b0 terrain gradient (4% contribution), updating regional prior (15%) under Bayesian log-likelihood evidence fusion."
+    },
+    "Sulthan Bathery": {
+      "area": "Sulthan Bathery (Eastern Plain)",
+      "category": "Flatland Buffer",
+      "landslide_probability": 0.13,
+      "lower_bound": 0.05,
+      "upper_bound": 0.21,
+      "credible_interval_str": "5%\u201321%",
+      "risk": "LOW",
+      "hri_score": 14.8,
+      "model_status": "Prototype / Empirical Beta-Logit Inference",
+      "evidence_breakdown": {
+        "rainfall_evidence": {
+          "metric": "96.0 mm",
+          "contribution_pct": 11.8,
+          "description": "24h precipitation exceedance relative to 285mm cloudburst threshold."
+        },
+        "slope_evidence": {
+          "metric": "3.2\u00b0",
+          "contribution_pct": 2.4,
+          "description": "Topographic scarp angle relative to 40\u00b0 regolith stability threshold."
+        },
+        "soil_moisture_evidence": {
+          "metric": "32.0%",
+          "contribution_pct": 6.4,
+          "description": "Subsurface pore pressure saturation driving soil liquefaction."
+        },
+        "historical_evidence": {
+          "metric": "8.0%",
+          "contribution_pct": 1.2,
+          "description": "Historical GSI landslide recurrence frequency in catchment."
+        }
+      },
+      "why_this_probability": "Posterior probability of 13% (95% CI: 5%\u201321%) is driven primarily by 96.0mm precipitation (12% contribution) and 3.2\u00b0 terrain gradient (2% contribution), updating regional prior (15%) under Bayesian log-likelihood evidence fusion."
+    }
+  }
+}
